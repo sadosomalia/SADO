@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
 import '../styles/globals.css'
+import 'animate.css'
 
 import Layout from '../components/Layout'
 

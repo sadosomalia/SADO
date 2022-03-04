@@ -1,3 +1,13 @@
+import Navigation from '../components/Navigation'
+import Meta from '../components/Meta'
+import AboutSection from '../components/AboutSection'
 export default function Home() {
-  return <div className='container'> Hello SADO </div>
+  return (
+    <>
+      {' '}
+      <Meta />
+      <Navigation />
+      <AboutSection />
+    </>
+  )
 }

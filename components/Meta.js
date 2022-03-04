@@ -8,7 +8,7 @@ const Meta = (props) => {
     'We are one of the most effective Web Development Companies in Somalia'
   const image = 'https://www.sadosomalia.org/favicon.png'
   const url = `https://www.sadosomalia.org${router.asPath}`
-  const author = 'websom'
+  const author = 'SADO'
 
   return (
     <Head>

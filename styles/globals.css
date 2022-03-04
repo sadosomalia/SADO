@@ -58,6 +58,13 @@ header.sticky nav {
   bottom: 35%;
 }
 
+.carousel-caption h5 {
+  background-color: rgba(0, 0, 0, 0.075) !important;
+}
+.carousel-caption p {
+  background-color: rgba(0, 0, 0, 0.075) !important;
+}
+
 .dropdown-menu {
   border-radius: 0;
   border: none !important;

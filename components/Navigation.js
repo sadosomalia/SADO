@@ -1,13 +1,42 @@
 import Link from 'next/link'
 import { useEffect } from 'react'
+import Carousel from './Carousel'
+import { useRouter } from 'next/router'
 
-const Navigation = () => {
+const Navigation = ({ carousel }) => {
+  const router = useRouter()
+
   useEffect(() => {
     window.addEventListener('scroll', () => {
       const nav = document.querySelector('header')
       nav.classList.toggle('sticky', window.scrollY > 100)
     })
   }, [])
+
+  const carouselDef = [
+    {
+      _id: 1,
+      title: 'LOREM IPSUM DOLOR',
+      image: '/slide.jpg',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora provident quas ab, dolores eum alias voluptas veritatis culpa sapiente ipsum vero! Vel maiores recusandae quod omnis aliquam voluptatibus ea perferendis.',
+      height: '100%',
+    },
+    {
+      _id: 2,
+      title: 'SIT AMET CONSECTETUR',
+      image: '/slide.jpg',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora provident quas ab, dolores eum alias voluptas veritatis culpa sapiente ipsum vero! Vel maiores recusandae quod omnis aliquam voluptatibus ea perferendis.',
+    },
+    {
+      _id: 3,
+      title: 'ADIPISCING ELIT',
+      image: '/slide.jpg',
+      description:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora provident quas ab, dolores eum alias voluptas veritatis culpa sapiente ipsum vero! Vel maiores recusandae quod omnis aliquam voluptatibus ea perferendis.',
+    },
+  ]
 
   return (
     <header id='header'>
@@ -88,7 +117,7 @@ const Navigation = () => {
                   <li>
                     <Link href='/#about'>
                       <a className='dropdown-item fw-bold'>
-                        POLICY AND PROCEDURE
+                        POLICIES AND PROCEDURE
                       </a>
                     </Link>
                   </li>
@@ -184,108 +213,9 @@ const Navigation = () => {
         </div>
       </nav>
 
-      <div
-        id='carouselExampleIndicators'
-        className='carousel slide'
-        data-bs-ride='carousel'
-      >
-        <div className='carousel-indicators'>
-          <button
-            type='button'
-            data-bs-target='#carouselExampleIndicators'
-            data-bs-slide-to='0'
-            className='active'
-            aria-current='true'
-            aria-label='Slide 1'
-          ></button>
-          <button
-            type='button'
-            data-bs-target='#carouselExampleIndicators'
-            data-bs-slide-to='1'
-            aria-label='Slide 2'
-          ></button>
-          <button
-            type='button'
-            data-bs-target='#carouselExampleIndicators'
-            data-bs-slide-to='2'
-            aria-label='Slide 3'
-          ></button>
-        </div>
-        <div className='carousel-inner'>
-          <div className='carousel-item active'>
-            <img src='/slide.jpg' className='d-block w-100' alt='...' />
-            <div
-              className='carousel-caption d-none d-md-block'
-              data-aos='fade-up'
-              data-aos-duration='2000'
-            >
-              <h5 className='display-1 fw-bold'>LOREM IPSUM DOLOR</h5>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-                provident quas ab, dolores eum alias voluptas veritatis culpa
-                sapiente ipsum vero! Vel maiores recusandae quod omnis aliquam
-                voluptatibus ea perferendis.
-              </p>
-            </div>
-          </div>
-          <div className='carousel-item'>
-            <img src='/slide.jpg' className='d-block w-100' alt='...' />
-            <div
-              className='carousel-caption d-none d-md-block'
-              data-aos='fade-up'
-              data-aos-duration='2000'
-            >
-              <h5 className='display-1 fw-bold'> SIT AMET CONSECTETUR</h5>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-                provident quas ab, dolores eum alias voluptas veritatis culpa
-                sapiente ipsum vero! Vel maiores recusandae quod omnis aliquam
-                voluptatibus ea perferendis.
-              </p>
-            </div>
-          </div>
-          <div className='carousel-item'>
-            <img src='/slide.jpg' className='d-block w-100' alt='...' />
-            <div
-              className='carousel-caption d-none d-md-block'
-              data-aos='fade-up'
-              data-aos-duration='2000'
-            >
-              <h5 className='display-1 fw-bold'>PORRO QUISQUAM EST</h5>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-                provident quas ab, dolores eum alias voluptas veritatis culpa
-                sapiente ipsum vero! Vel maiores recusandae quod omnis aliquam
-                voluptatibus ea perferendis.
-              </p>
-            </div>
-          </div>
-        </div>
-        <button
-          className='carousel-control-prev'
-          type='button'
-          data-bs-target='#carouselExampleIndicators'
-          data-bs-slide='prev'
-        >
-          <span
-            className='carousel-control-prev-icon'
-            aria-hidden='true'
-          ></span>
-          <span className='visually-hidden'>Previous</span>
-        </button>
-        <button
-          className='carousel-control-next'
-          type='button'
-          data-bs-target='#carouselExampleIndicators'
-          data-bs-slide='next'
-        >
-          <span
-            className='carousel-control-next-icon'
-            aria-hidden='true'
-          ></span>
-          <span className='visually-hidden'>Next</span>
-        </button>
-      </div>
+      <Carousel
+        carousel={carousel && carousel.length > 0 ? carousel : carouselDef}
+      />
     </header>
   )
 }
