@@ -58,10 +58,8 @@ const ProjectSection = () => {
       <div className='row gy-3'>
         {projects.slice(0, 4).map((project) => (
           <div key={project._id} className='col-lg-3 col-md-4 col-sm-6 col-12'>
-            <div className='card shadow border-0 rounded-0'>
-              <Image
-                width={300}
-                height={300}
+            <div className='card shadow border-0 rounded-0 animate__bounceIn'>
+              <img
                 src={project.image}
                 alt={project.title}
                 className='card-img-top img-fluid'

@@ -45,7 +45,7 @@ const PartnerSection = () => {
 
       <div
         id='carouselExampleControls'
-        className='carousel slide'
+        className='carousel slide animate__bounceIn'
         data-bs-ride='carousel'
       >
         <div className='carousel-inner'>

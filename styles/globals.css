@@ -94,9 +94,37 @@ header.sticky nav {
   transform: scale(1.1);
 }
 
+/* Project Section */
+#projects .card {
+  overflow: hidden;
+  display: inline-block;
+}
 #projects .img-fluid {
   transition: 0.8s;
+  overflow: hidden !important;
 }
 #projects .img-fluid:hover {
   transform: scale(1.1);
+  overflow: hidden !important;
+}
+
+/* News Section */
+#news .card-body {
+  margin: auto 20px;
+  margin-top: -50px;
+}
+#news .card-body {
+  transition: 0.8s;
+  overflow: hidden !important;
+}
+#news .card-body:hover {
+  transform: scale(1.1);
+  overflow: hidden !important;
+}
+
+/* Footer Section */
+footer {
+  background: url('/wave.svg') no-repeat center;
+  background-size: cover;
+  padding-top: 200px !important;
 }

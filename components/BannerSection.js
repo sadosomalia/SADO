@@ -1,4 +1,3 @@
-import { FaBullseye, FaEye, FaHandshake } from 'react-icons/fa'
 import Link from 'next/link'
 
 const BannerSection = () => {
