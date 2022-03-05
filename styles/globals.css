@@ -80,3 +80,23 @@ header.sticky nav {
   background-color: var(--color-primary) !important;
   color: var(--color-secondary) !important;
 }
+
+/* Banner Section */
+.jumbotron {
+  background: url('/adbanner.jpg') no-repeat center;
+  background-size: cover;
+  background-color: #353535af;
+}
+.donate-btn {
+  transition: 0.8s;
+}
+.donate-btn:hover {
+  transform: scale(1.1);
+}
+
+#projects .img-fluid {
+  transition: 0.8s;
+}
+#projects .img-fluid:hover {
+  transform: scale(1.1);
+}

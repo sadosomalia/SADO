@@ -25,7 +25,7 @@ const AboutSection = () => {
     <div className='container pt-5'>
       <div className='row'>
         <div className='col-lg-6 col-md 6 col-12 my-auto'>
-          <h3 className='fw-bold py-3'>ABOUT US</h3>
+          <h2 className='fw-bold py-3'>ABOUT US</h2>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis,
             vitae ducimus molestias porro ut id veniam quibusdam deleniti
