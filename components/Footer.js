@@ -7,8 +7,33 @@ import {
   FaPhoneAlt,
   FaEnvelope,
   FaGlobe,
+  FaMapMarked,
 } from 'react-icons/fa'
 const Footer = () => {
+  const locations = [
+    {
+      _id: 1,
+      office: 'Mogadishu Office',
+      address: 'Bula Hubey, Wadajir District Behind Aden Abdulle Hospital,',
+      phone: '+252614122223',
+      phoneText: '+252-614-122-223',
+    },
+    {
+      _id: 2,
+      office: 'Kismayu Office',
+      address: 'Behind Red Cross Office',
+      phone: '+252614122227',
+      phoneText: '+252-614-122-227',
+    },
+    {
+      _id: 3,
+      office: 'Bardera Office',
+      address: 'Opposite Hormuud Branch',
+      phone: '+252614122228',
+      phoneText: '+252-614-122-228',
+    },
+  ]
+
   return (
     <footer className=''>
       <div className='container py-5'>
@@ -32,15 +57,25 @@ const Footer = () => {
             </p>
 
             <div className='d-flex flex-column my-4'>
-              <div className='my-1'>
-                <FaPhoneAlt className='text-success' />
-                <a
-                  href='tel:+252615301507'
-                  className='ms-2 text-decoration-none text-black'
-                >
-                  +252 (0) 61 5 301 5007
-                </a>
-              </div>
+              {locations.map((location) => (
+                <>
+                  <h6 className='fw-bold'>{location.office}</h6>
+                  <div key={location._id} className='my-1'>
+                    <FaPhoneAlt className='text-success' />
+                    <a
+                      href={`tel:${location.phone}`}
+                      className='ms-2 text-decoration-none text-black'
+                    >
+                      {location.phoneText}
+                    </a>
+                  </div>
+                  <div key={location._id} className='my-1'>
+                    <FaMapMarked className='text-success' />
+                    <span className='ms-2'>{location.address}</span>
+                  </div>
+                  <hr />
+                </>
+              ))}
               <div className='my-1'>
                 <FaEnvelope className='text-success' />
                 <a
