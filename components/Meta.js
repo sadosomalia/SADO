@@ -3,9 +3,9 @@ import { useRouter } from 'next/router'
 
 const Meta = (props) => {
   const router = useRouter()
-  const title = 'Web Design and Development Solutions In Somalia | websom'
+  const title = 'Social-life and Agricultural Development Organization (SADO)'
   const description =
-    'We are one of the most effective Web Development Companies in Somalia'
+    'SADO aims to release the potential of the Somali people to change their own lives through sustainable, integrated development strategies.'
   const image = 'https://www.sadosomalia.org/favicon.png'
   const url = `https://www.sadosomalia.org${router.asPath}`
   const author = 'SADO'
@@ -32,7 +32,7 @@ const Meta = (props) => {
 
       <meta
         name='keywords'
-        content='Web, Mobile, Web Mobile, App, Development Company, App Development, Web Development, Mobile Application Development Company, Mobile Application Development, agency, Design Agency, Digital Age, Digital Agency, Web Design Development Agency, Web Design, eCommerce, Websites, Website, Websom, Web Som, websom, sadosomalia.org, websomdev, dev, Design, Web Solutions, Empowering Business Growth With The Power Of Web Development, Business Growth, Business, Growth, Software Development Company, Web Development Company, Custom Software Development, custom software development company, Custom Web, Custom Design, Somalia, Web Design Company in Somalia, Somali Web Design, Somali Web Development, SEO Optimization, Marketing, Branding, E-commerce, Development'
+        content='SADO, Development, Development Programme, Sustainable Development	SADO works, Nations, Human Development, Social-life, Agricultural, Organization, Social-life and Agricultural Development Organization'
       />
       <meta name='author' content={props.author ? props.author : author} />
       <meta name='publisher' content={props.author ? props.author : author} />

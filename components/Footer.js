@@ -35,7 +35,7 @@ const Footer = () => {
   ]
 
   return (
-    <footer className=''>
+    <footer id='contact'>
       <div className='container py-5'>
         <div className='row gy-3'>
           <div className='col-lg-4 col-md-6 col-12'>
@@ -132,7 +132,7 @@ const Footer = () => {
             <iframe
               src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15949.270655878952!2d45.305239!3d2.028667!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4109227b6d8951b3!2sSADO%20Mogadishu%20office!5e0!3m2!1sen!2sso!4v1646505736967!5m2!1sen!2sso'
               width='100%'
-              height='300'
+              height='500px'
               style={{ border: '0' }}
               allowFullScreen=''
               loading='lazy'

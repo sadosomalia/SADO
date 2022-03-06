@@ -200,7 +200,7 @@ const Navigation = ({ carousel }) => {
                 </ul>
               </li>
               <li className='nav-item'>
-                <Link href='/contact'>
+                <Link href='/#contact'>
                   <a className='nav-link  ' aria-current='page'>
                     CONTACT US
                   </a>
