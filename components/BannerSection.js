@@ -5,7 +5,7 @@ const BannerSection = () => {
     <div className='jumbotron py-5 my-5 text-center text-light'>
       <div className='container py-5'>
         <h1 className='display-4 fw-bold'>
-          Small decision can change someone's life
+          {" Small decision can change 'someones' life"}
         </h1>
         <p className='lead'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga unde

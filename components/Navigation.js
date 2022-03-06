@@ -1,11 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import { useEffect } from 'react'
 import Carousel from './Carousel'
-import { useRouter } from 'next/router'
 
 const Navigation = ({ carousel }) => {
-  const router = useRouter()
-
   useEffect(() => {
     window.addEventListener('scroll', () => {
       const nav = document.querySelector('header')

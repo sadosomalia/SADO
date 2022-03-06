@@ -1,6 +1,4 @@
-import { FaBullseye, FaEye, FaHandshake } from 'react-icons/fa'
-import Link from 'next/link'
-import Image from 'next/image'
+/* eslint-disable @next/next/no-img-element */
 
 const PartnerSection = () => {
   const partners = [
@@ -101,23 +99,6 @@ const PartnerSection = () => {
           <span className='visually-hidden'>Next</span>
         </button>
       </div>
-
-      {/* <div className='row gy-3'>
-        {projects.map((project) => (
-          <div key={project._id} className='col-lg-2 col-md-4 col-sm-6 col-12'>
-            <div className='text-center'>
-              <Image
-                width={150}
-                height={150}
-                src={project.image}
-                alt={project.title}
-                className='card-img-top img-fluid'
-              />
-              <h6 className=''>{project.title}</h6>
-            </div>
-          </div>
-        ))} */}
-      {/* </div> */}
     </div>
   )
 }

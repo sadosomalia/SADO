@@ -1,6 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import { FaBullseye, FaEye, FaHandshake } from 'react-icons/fa'
 import Link from 'next/link'
-import Image from 'next/image'
 
 const NewsSection = () => {
   const news = [

@@ -1,9 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 import {
   FaFacebookSquare,
   FaTwitterSquare,
   FaInstagramSquare,
   FaYoutubeSquare,
-  FaMarker,
   FaPhoneAlt,
   FaEnvelope,
   FaGlobe,
@@ -16,8 +16,11 @@ const Footer = () => {
           <div className='col-lg-4 col-md-6 col-12'>
             <h3 className='fw-bold'>About us</h3>
             <p className='lead'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reprehenderit, quisquam.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure
+              quibusdam harum consectetur cumque minus quis ipsum quasi, in
+              suscipit vero modi repudiandae, consequatur aperiam cum sed,
+              architecto quae animi reiciendis. Repellat officiis nemo harum cum
+              totam quia molestiae? Pariatur numquam vero.
             </p>
             <img src='/logo.png' alt='logo' className='img-fluid w-25' />
           </div>
@@ -84,7 +87,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className='col-lg-4 col-md-6 col-12'>
+          <div className='col-lg-4 col-12'>
             <h3 className='fw-bold'>Visit us</h3>
             <p className='lead'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -93,7 +96,7 @@ const Footer = () => {
 
             <iframe
               src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15949.270655878952!2d45.305239!3d2.028667!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4109227b6d8951b3!2sSADO%20Mogadishu%20office!5e0!3m2!1sen!2sso!4v1646505736967!5m2!1sen!2sso'
-              width='400'
+              width='100%'
               height='300'
               style={{ border: '0' }}
               allowFullScreen=''
