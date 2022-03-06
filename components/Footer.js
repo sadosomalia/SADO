@@ -79,10 +79,10 @@ const Footer = () => {
               <div className='my-1'>
                 <FaEnvelope className='text-success' />
                 <a
-                  href='mailto:info@sadosom.org'
+                  href='mailto:sado@sadosom.org'
                   className='ms-2 text-decoration-none text-black'
                 >
-                  info@sadosom.org
+                  sado@sadosom.org
                 </a>
               </div>
               <div className='my-1'>
