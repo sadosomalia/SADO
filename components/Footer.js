@@ -98,24 +98,24 @@ const Footer = () => {
 
             <div className='d-flex'>
               <div className=''>
-                <a href='https://facebook.com/sadosomalia'>
+                <a href='https://www.facebook.com/SADOSOMALIA/'>
                   <FaFacebookSquare className='fs-1 text-success' />
                 </a>
               </div>
               <div className='ms-3'>
-                <a href='https://twitter.com/sadosomalia1'>
+                <a href='https://www.twitter.com/Sadosomalia1'>
                   <i className='fab fa-twitter'></i>
                   <FaTwitterSquare className='fs-1 text-success' />
                 </a>
               </div>
               <div className='ms-3'>
-                <a href='https://instagram.com/sadosomalia'>
+                <a href='https://www.instagram.com/sadosomalia/'>
                   <i className='fab fa-instagram'></i>
                   <FaInstagramSquare className='fs-1 text-success' />
                 </a>
               </div>
               <div className='ms-3'>
-                <a href='https://youtube.com/sadosomalia'>
+                <a href='https://www.youtube.com/channel/UCLMPGfqfpvhkNb9YsZUb14A'>
                   <i className='fab fa-linkedin-in'></i>
                   <FaYoutubeSquare className='fs-1 text-success' />
                 </a>

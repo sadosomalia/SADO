@@ -318,7 +318,9 @@ const About = () => {
                     </h2>
                     <div
                       id={`collapse${item._id}`}
-                      className='accordion-collapse collapse'
+                      className={`accordion-collapse collapse ${
+                        item._id === 1 ? 'show' : ''
+                      }`}
                       aria-labelledby={`heading${item._id}`}
                       data-bs-parent='#accordionExample'
                     >

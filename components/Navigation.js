@@ -60,13 +60,6 @@ const Navigation = ({ carousel }) => {
           </button>
           <div className='collapse navbar-collapse' id='navbarNav'>
             <ul className='navbar-nav ms-auto'>
-              <li className='nav-item'>
-                <Link href='/about'>
-                  <a className='nav-link  ' aria-current='page'>
-                    ABOUT US
-                  </a>
-                </Link>
-              </li>
               <li className='nav-item dropdown'>
                 <a
                   className='nav-link dropdown-toggle'
@@ -80,22 +73,8 @@ const Navigation = ({ carousel }) => {
                 </a>
                 <ul className='dropdown-menu' aria-labelledby='navbarDropdown'>
                   <li>
-                    <Link href='/#about'>
+                    <Link href='/about'>
                       <a className='dropdown-item fw-bold'>ABOUT US</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href='/#about'>
-                      <a className='dropdown-item fw-bold'>
-                        STRATEGIC OBJECTIVES
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href='/#about'>
-                      <a className='dropdown-item fw-bold'>
-                        ORGANIZATION CULTURE
-                      </a>
                     </Link>
                   </li>
                   <li>
