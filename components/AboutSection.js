@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { FaBullseye, FaEye, FaHandshake } from 'react-icons/fa'
 
 const AboutSection = () => {
@@ -32,10 +33,11 @@ const AboutSection = () => {
             nostrum consequuntur odit totam incidunt possimus tempora voluptates
             quidem aspernatur mollitia? Quia?
           </p>
-          {/* read more button */}
-          <button className='btn btn-outline-success rounded-0 shadow-none my-3'>
-            Read More
-          </button>
+          <Link href='/about'>
+            <a className='btn btn-outline-success rounded-0 shadow-none my-3'>
+              Read More
+            </a>
+          </Link>
         </div>
         <div className='col-lg-6 col-md 6 col-12 my-auto'>
           <div className='row'>

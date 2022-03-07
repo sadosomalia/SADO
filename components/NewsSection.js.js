@@ -7,36 +7,42 @@ const NewsSection = () => {
     {
       _id: 1,
       title: 'CULPA ASERNATUR NISI',
+      slug: 'culpa-asernatur-nisi',
       description: 'Lorem, ipsum dolor sit amet.',
       image: '/card.jpg',
     },
     {
       _id: 2,
       title: 'CULPA ASERNATUR NISI',
+      slug: 'culpa-asernatur-nisi',
       description: 'Lorem, ipsum dolor sit amet.',
       image: '/card.jpg',
     },
     {
       _id: 3,
       title: 'CULPA ASERNATUR NISI',
+      slug: 'culpa-asernatur-nisi',
       description: 'Lorem, ipsum dolor sit amet.',
       image: '/card.jpg',
     },
     {
       _id: 4,
       title: 'CULPA ASERNATUR NISI',
+      slug: 'culpa-asernatur-nisi',
       description: 'Lorem, ipsum dolor sit amet.',
       image: '/card.jpg',
     },
     {
       _id: 5,
       title: 'CULPA ASERNATUR NISI',
+      slug: 'culpa-asernatur-nisi',
       description: 'Lorem, ipsum dolor sit amet.',
       image: '/card.jpg',
     },
     {
       _id: 6,
       title: 'CULPA ASERNATUR NISI',
+      slug: 'culpa-asernatur-nisi',
       description: 'Lorem, ipsum dolor sit amet.',
       image: '/card.jpg',
     },
@@ -61,7 +67,7 @@ const NewsSection = () => {
               <div className='card-body shadow bg-light'>
                 <h6 className='card-title'>{n.title}</h6>
                 <p className='card-text'>{n.description}</p>
-                <Link href='/'>
+                <Link href={`/news/${n.slug}`}>
                   <a className='btn btn-outline-success btn-sm rounded-0 shadow'>
                     Read More
                   </a>

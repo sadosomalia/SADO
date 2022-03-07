@@ -179,6 +179,13 @@ const Navigation = ({ carousel }) => {
                 </ul>
               </li>
               <li className='nav-item'>
+                <Link href='/news'>
+                  <a className='nav-link  ' aria-current='page'>
+                    NEWS
+                  </a>
+                </Link>
+              </li>
+              <li className='nav-item'>
                 <Link href='/#contact'>
                   <a className='nav-link  ' aria-current='page'>
                     CONTACT US

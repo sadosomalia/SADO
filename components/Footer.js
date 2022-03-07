@@ -58,9 +58,9 @@ const Footer = () => {
 
             <div className='d-flex flex-column my-4'>
               {locations.map((location) => (
-                <>
+                <div key={location._id}>
                   <h6 className='fw-bold'>{location.office}</h6>
-                  <div key={location._id} className='my-1'>
+                  <div className='my-1'>
                     <FaPhoneAlt className='text-success' />
                     <a
                       href={`tel:${location.phone}`}
@@ -74,7 +74,7 @@ const Footer = () => {
                     <span className='ms-2'>{location.address}</span>
                   </div>
                   <hr />
-                </>
+                </div>
               ))}
               <div className='my-1'>
                 <FaEnvelope className='text-success' />
