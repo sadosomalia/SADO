@@ -17,39 +17,6 @@ const About = () => {
 
   const data = [
     {
-      _id: 1,
-      title: 'VISION',
-      description: (
-        <>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eos
-            aspernatur quos doloremque harum magni similique, inventore aperiam
-            commodi voluptates porro id non vero, ab quae asperiores illum
-            consequatur quam?
-          </p>
-          <p>
-            Recusandae, quos tempore rerum, fugit molestiae maiores deleniti,
-            maxime quam doloremque expedita itaque fuga cum amet provident
-            mollitia dicta sit totam ipsa excepturi iusto consequatur? Quasi
-            consectetur tempora repudiandae. Consequuntur! Eveniet laborum neque
-            veniam magnam ipsum eaque illo maxime, quisquam nulla repellendus
-          </p>
-          <p>
-            cupiditate pariatur officiis quasi! Nihil obcaecati quas maxime
-            neque quasi aspernatur. Asperiores labore totam adipisci magni
-            laboriosam omnis.
-          </p>
-          <p>
-            Quod, tempore reprehenderit? Mollitia illum sit quod, ullam
-            reprehenderit eligendi! Odio consequatur alias tenetur adipisci
-            quibusdam, minima ea molestias sit, voluptas quo, iure quasi
-            accusamus blanditiis soluta velit? Nemo, inventore!
-          </p>
-        </>
-      ),
-      image: <FaEye className='img-fluid fs-1 mx-auto mt-2' />,
-    },
-    {
       _id: 2,
       title: 'MISSION',
       description: (
@@ -83,8 +50,41 @@ const About = () => {
       image: <FaBullseye className='img-fluid fs-1 mx-auto mt-2' />,
     },
     {
+      _id: 1,
+      title: 'VISION',
+      description: (
+        <>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eos
+            aspernatur quos doloremque harum magni similique, inventore aperiam
+            commodi voluptates porro id non vero, ab quae asperiores illum
+            consequatur quam?
+          </p>
+          <p>
+            Recusandae, quos tempore rerum, fugit molestiae maiores deleniti,
+            maxime quam doloremque expedita itaque fuga cum amet provident
+            mollitia dicta sit totam ipsa excepturi iusto consequatur? Quasi
+            consectetur tempora repudiandae. Consequuntur! Eveniet laborum neque
+            veniam magnam ipsum eaque illo maxime, quisquam nulla repellendus
+          </p>
+          <p>
+            cupiditate pariatur officiis quasi! Nihil obcaecati quas maxime
+            neque quasi aspernatur. Asperiores labore totam adipisci magni
+            laboriosam omnis.
+          </p>
+          <p>
+            Quod, tempore reprehenderit? Mollitia illum sit quod, ullam
+            reprehenderit eligendi! Odio consequatur alias tenetur adipisci
+            quibusdam, minima ea molestias sit, voluptas quo, iure quasi
+            accusamus blanditiis soluta velit? Nemo, inventore!
+          </p>
+        </>
+      ),
+      image: <FaEye className='img-fluid fs-1 mx-auto mt-2' />,
+    },
+    {
       _id: 3,
-      title: 'CORE VALUE',
+      title: 'CORE VALUES',
       description: (
         <>
           <p>
@@ -249,27 +249,53 @@ const About = () => {
           <div className='col-md-6 col-12 my-auto'>
             <h2 className='fw-bold'>ABOUT US</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-              amet, distinctio sapiente tempora modi, tempore quia voluptatum
-              sint eligendi molestiae nam accusantium odit! Earum sequi tempore
-              dolores libero quisquam nulla.
+              Social Life and Agricultural Development Organization (SADO) is a
+              Somalia based Local Non-Governmental Organization (LNGO)
+              established in 1994 with the aim of spearheading local development
+              initiatives in GEDO region and other parts of South-Central
+              Somalia. SADO is legally registered in Kenya and in Somalia under
+              Somalia Federal Government and in Jubaland State of Somalia. With
+              its headquarters in Mogadishu, Somalia, SADO has base stations in
+              Kismayu, Bardera, Elwak, Garbaharrey, Belt Hawa and Dollow
+              Districts of Somalia. It has operational presence and experience
+              in the greater Horn of Africa. SADO is a firm believer in the
+              fundamental moral principle of humanity; that all human begins are
+              born free and equal in dignity and rights and therefore action
+              should be taken to prevent or alleviate human suffering arising
+              out of disaster or conflict, and that nothing should override this
+              principle. Our activities are grounded on the rights-based
+              approach on the belief that people are entitled to basic
+              conditions of living with dignity and have access to equal
+              opportunity as a basis of fulfilling their human potential. SADO
+              therefore seeks to stimulate sustainable developmental change
+              amongst vulnerable communities living in the Horn of Africa
+              region. SADO's mandate and core business is facilitating community
+              development. These ambitions are realized through knowledge
+              transfer, influencing, brokering linkages and facilitating/
+              implementing integrated people centered humanitarian and
+              development programs. The main developmental approach of SADO is
+              enabling the communities to find local solutions to their
+              socio-economic challenges.
             </p>
             <p>
-              Aliquid delectus iusto eligendi, rerum nam recusandae molestiae
-              fuga.
+              SADO has an impressive track record and experience in implementing
+              community-driven development (CDD) programs in Governance, Food
+              Security and Nutrition, Climate Smart Economic Empowerment (CSEE)
+              Climate Resilient Water, Sanitation and Hygiene (CRWASH),
+              Education, Health, Shelter and settlement. Additionally, human
+              rights, gender and environment have over time been addressed by
+              SADO as cross-cutting issues. The main target groups of SADO
+              include vulnerable and marginalized pastoralists comprising of
+              individuals, families, groups and communities.
             </p>
 
             <p>
-              Tenetur doloremque excepturi fugit commodi sint dolore cumque
-              distinctio minus, eveniet pariatur illum dolor soluta asperiores
-              totam officia? Vitae, commodi delectus? Perspiciatis facilis qui
-              quae consequatur rem tempora in reprehenderit deserunt nostrum ad
-              dolorem.
-            </p>
-
-            <p>
-              Quo quas sunt sint blanditiis voluptatem? Id molestiae consectetur
-              ex molestias delectus obcaecati, saepe maiores mollitia magni.
+              SADO has a well-defined and functional internal organizational
+              structure that seeks to deliver its strategic objectives. SADO
+              works through a number of well-resourced human resources,
+              infrastructure, and equipment spread across its field offices.
+              Policy and strategic guidance, leadership and oversight are
+              offered by a diverse and competent Board of Directors.
             </p>
           </div>
           <div className='col-md-6 col-12 my-auto'>
@@ -296,6 +322,36 @@ const About = () => {
           ))}
         </div>
 
+        <h2 className='fw-bold'>WHO WE ARE</h2>
+        <p>
+          Social-Life and Agricultural Development Organization (SADO) is a
+          non-partisan, non-Governmental, not-for-profit organization
+          established in 1994. SADO's mandate and core functions are
+          facilitating Community-Driven Development (CDD), which are actualized
+          through (knowledge transfer, influencing, brokering linkages, and
+          facilitating/ implementing integrated people-centered humanitarian and
+          development programs. The main target groups of SADO include
+          vulnerable and marginalized pastoralists comprising of individuals,
+          families, groups, and communities.
+        </p>
+
+        <p>
+          SADO aims to promote long-term community-drive development among
+          Somalia's most disadvantaged groups. The mandate and primary function
+          of SADO are to assist in developing communities to realize their full
+          potential. SADO's primary developmental strategy is to help
+          communities discover answers to their socio-economic problems.
+        </p>
+
+        <p>
+          SADO has fostered good working relationships and collaboration with a
+          range of stakeholders, including the FGS, FMS, CSOs, peer NGOs, INGOs,
+          and development partners. SADO has worked with the key development
+          partners: ACTED, NCA, Oxfam Novib, NEXUS platform, Somalia, and USAID.
+          The organization engages closely with these like-minded
+          agencies/institutions to pursue a comprehensive and integrated
+          approach to programming.
+        </p>
         <div className='py-5'>
           <h2 className='fw-bold'>STRATEGIC OBJECTIVES </h2>
 

@@ -7,17 +7,19 @@ const Carousel = ({ carousel }) => {
       data-bs-ride='carousel'
     >
       <div className='carousel-indicators'>
-        {carousel.map((item) => (
-          <button
-            key={item._id}
-            type='button'
-            data-bs-target='#carouselExampleIndicators'
-            data-bs-slide-to={Number(item._id) - 1}
-            className={Number(item._id) === 1 ? 'active' : ''}
-            aria-current={Number(item._id) === 1 ? 'true' : 'false'}
-            aria-label={`Slide ${item._id}`}
-          ></button>
-        ))}
+        {carousel &&
+          carousel.length > 1 &&
+          carousel.map((item) => (
+            <button
+              key={item._id}
+              type='button'
+              data-bs-target='#carouselExampleIndicators'
+              data-bs-slide-to={Number(item._id) - 1}
+              className={Number(item._id) === 1 ? 'active' : ''}
+              aria-current={Number(item._id) === 1 ? 'true' : 'false'}
+              aria-label={`Slide ${item._id}`}
+            ></button>
+          ))}
       </div>
       <div className='carousel-inner'>
         {carousel.map((item) => (
@@ -50,24 +52,34 @@ const Carousel = ({ carousel }) => {
           </div>
         ))}
       </div>
-      <button
-        className='carousel-control-prev'
-        type='button'
-        data-bs-target='#carouselExampleIndicators'
-        data-bs-slide='prev'
-      >
-        <span className='carousel-control-prev-icon' aria-hidden='true'></span>
-        <span className='visually-hidden'>Previous</span>
-      </button>
-      <button
-        className='carousel-control-next'
-        type='button'
-        data-bs-target='#carouselExampleIndicators'
-        data-bs-slide='next'
-      >
-        <span className='carousel-control-next-icon' aria-hidden='true'></span>
-        <span className='visually-hidden'>Next</span>
-      </button>
+      {carousel && carousel.length > 1 && (
+        <>
+          <button
+            className='carousel-control-prev'
+            type='button'
+            data-bs-target='#carouselExampleIndicators'
+            data-bs-slide='prev'
+          >
+            <span
+              className='carousel-control-prev-icon'
+              aria-hidden='true'
+            ></span>
+            <span className='visually-hidden'>Previous</span>
+          </button>
+          <button
+            className='carousel-control-next'
+            type='button'
+            data-bs-target='#carouselExampleIndicators'
+            data-bs-slide='next'
+          >
+            <span
+              className='carousel-control-next-icon'
+              aria-hidden='true'
+            ></span>
+            <span className='visually-hidden'>Next</span>
+          </button>
+        </>
+      )}
     </div>
   )
 }

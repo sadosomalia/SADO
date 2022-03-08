@@ -154,6 +154,7 @@ const Navigation = ({ carousel }) => {
                   </li>
                 </ul>
               </li>
+
               <li className='nav-item dropdown'>
                 <a
                   className='nav-link dropdown-toggle'
@@ -167,13 +168,8 @@ const Navigation = ({ carousel }) => {
                 </a>
                 <ul className='dropdown-menu' aria-labelledby='navbarDropdown'>
                   <li>
-                    <Link href='/#national'>
-                      <a className='dropdown-item fw-bold'>NATIONAL</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href='/#international'>
-                      <a className='dropdown-item fw-bold'>INTERNATIONAL</a>
+                    <Link href='/where-we-work/somalia'>
+                      <a className='dropdown-item fw-bold'>SOMALIA</a>
                     </Link>
                   </li>
                 </ul>
