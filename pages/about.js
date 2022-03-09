@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import Meta from '../components/Meta'
 import Navigation from '../components/Navigation'
@@ -269,12 +270,12 @@ const About = () => {
               opportunity as a basis of fulfilling their human potential. SADO
               therefore seeks to stimulate sustainable developmental change
               amongst vulnerable communities living in the Horn of Africa
-              region. SADO's mandate and core business is facilitating community
-              development. These ambitions are realized through knowledge
-              transfer, influencing, brokering linkages and facilitating/
-              implementing integrated people centered humanitarian and
-              development programs. The main developmental approach of SADO is
-              enabling the communities to find local solutions to their
+              region. {"SADO's"} mandate and core business is facilitating
+              community development. These ambitions are realized through
+              knowledge transfer, influencing, brokering linkages and
+              facilitating/ implementing integrated people centered humanitarian
+              and development programs. The main developmental approach of SADO
+              is enabling the communities to find local solutions to their
               socio-economic challenges.
             </p>
             <p>
@@ -326,7 +327,7 @@ const About = () => {
         <p>
           Social-Life and Agricultural Development Organization (SADO) is a
           non-partisan, non-Governmental, not-for-profit organization
-          established in 1994. SADO's mandate and core functions are
+          established in 1994. {"SADO's"} mandate and core functions are
           facilitating Community-Driven Development (CDD), which are actualized
           through (knowledge transfer, influencing, brokering linkages, and
           facilitating/ implementing integrated people-centered humanitarian and
@@ -337,10 +338,10 @@ const About = () => {
 
         <p>
           SADO aims to promote long-term community-drive development among
-          Somalia's most disadvantaged groups. The mandate and primary function
-          of SADO are to assist in developing communities to realize their full
-          potential. SADO's primary developmental strategy is to help
-          communities discover answers to their socio-economic problems.
+          {" Somalia's"} most disadvantaged groups. The mandate and primary
+          function of SADO are to assist in developing communities to realize
+          their full potential. {"SADO's"} primary developmental strategy is to
+          help communities discover answers to their socio-economic problems.
         </p>
 
         <p>

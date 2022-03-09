@@ -1,20 +1,20 @@
 import { useEffect, useState } from 'react'
-import { useRouter } from 'next/router'
 import Footer from './Footer'
 
 import { Circles } from 'react-loader-spinner'
-import Countdown from 'react-countdown'
 
 export default function Layout({ children }) {
   const [loading, setLoading] = useState(true)
-  const router = useRouter()
+
+  const seconds = process.env.NODE_ENV === 'production' ? 10000 : 1000
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false)
-    }, 10000)
+    }, seconds)
 
     return () => clearTimeout(timer)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (

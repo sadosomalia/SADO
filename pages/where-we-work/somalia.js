@@ -8,10 +8,22 @@ import 'mapbox-gl/dist/mapbox-gl.css'
 
 const Somalia = () => {
   const [viewport, setViewport] = useState({
-    latitude: 5.217961568301817,
-    longitude: 46.98536511617976,
+    latitude: 4.741754612713282,
+    longitude: 45.203976643935924,
     zoom: 5.5,
   })
+
+  const parkLayer = {
+    id: 'landuse_park',
+    type: 'fill',
+    source: 'mapbox',
+    'source-layer': 'landuse',
+    filter: ['==', 'class', 'park'],
+    paint: {
+      'fill-color': '#4E3FC8',
+    },
+  }
+
   const carousel = [
     {
       _id: 1,
@@ -44,20 +56,11 @@ const Somalia = () => {
         {...viewport}
         mapboxAccessToken={accessToken}
         style={{ width: '100%', height: 1000 }}
-        onViewportChange={(viewport) => setViewport(viewport)}
+        onMove={(e) => setViewport(e.viewport)}
         mapStyle='mapbox://styles/mapbox/streets-v11'
       >
-        <Marker
-          longitude={6.13645855622037}
-          latitude={46.62687782485264}
-          anchor='bottom'
-        >
-          <img
-            src='https://i.pinimg.com/originals/0f/61/ba/0f61ba72e0e12ba59d30a50295964871.png'
-            alt=''
-            width={50}
-            height={50}
-          />
+        <Marker longitude={-100} latitude={40} anchor='bottom'>
+          <img src='/logo.png' width={100} height={100} alt='map' />
         </Marker>
       </Map>
 
