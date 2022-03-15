@@ -3,6 +3,7 @@
 import Meta from '../components/Meta'
 import Navigation from '../components/Navigation'
 import { FaEye, FaBullseye, FaHandshake } from 'react-icons/fa'
+import StrategicObjectives from '../components/StrategicObjectives'
 
 const About = () => {
   const carousel = [
@@ -118,128 +119,6 @@ const About = () => {
     },
   ]
 
-  const objectives = [
-    {
-      _id: 1,
-      title: 'Elit Ipsum Sit Amet Consecterur',
-      description: (
-        <>
-          <p>
-            <strong>Lorem ipsum dolor </strong> sit amet consectetur adipisicing
-            elit.
-          </p>
-          <p>
-            Iusto provident adipisci, iste praesentium? Placeat velit aut illum
-            eius id suscipit quos nam laborum fugiat? Est id sed sit! Ad
-            impedit, dolor dolore quos nesciunt architecto, repellendus veniam
-            hic, minima quidem obcaecati ex iste quibusdam. Dicta iste
-            praesentium enim inventore porro voluptatem, non dignissimos
-            voluptate a et vitae at
-          </p>
-        </>
-      ),
-    },
-    {
-      _id: 2,
-      title: 'Elit Ipsum Sit Amet Consecterur',
-      description: (
-        <>
-          <p>
-            <strong>Lorem ipsum dolor </strong> sit amet consectetur adipisicing
-            elit.
-          </p>
-          <p>
-            Iusto provident adipisci, iste praesentium? Placeat velit aut illum
-            eius id suscipit quos nam laborum fugiat? Est id sed sit! Ad
-            impedit, dolor dolore quos nesciunt architecto, repellendus veniam
-            hic, minima quidem obcaecati ex iste quibusdam. Dicta iste
-            praesentium enim inventore porro voluptatem, non dignissimos
-            voluptate a et vitae at
-          </p>
-        </>
-      ),
-    },
-    {
-      _id: 3,
-      title: 'Elit Ipsum Sit Amet Consecterur',
-      description: (
-        <>
-          <p>
-            <strong>Lorem ipsum dolor </strong> sit amet consectetur adipisicing
-            elit.
-          </p>
-          <p>
-            Iusto provident adipisci, iste praesentium? Placeat velit aut illum
-            eius id suscipit quos nam laborum fugiat? Est id sed sit! Ad
-            impedit, dolor dolore quos nesciunt architecto, repellendus veniam
-            hic, minima quidem obcaecati ex iste quibusdam. Dicta iste
-            praesentium enim inventore porro voluptatem, non dignissimos
-            voluptate a et vitae at
-          </p>
-        </>
-      ),
-    },
-    {
-      _id: 4,
-      title: 'Elit Ipsum Sit Amet Consecterur',
-      description: (
-        <>
-          <p>
-            <strong>Lorem ipsum dolor </strong> sit amet consectetur adipisicing
-            elit.
-          </p>
-          <p>
-            Iusto provident adipisci, iste praesentium? Placeat velit aut illum
-            eius id suscipit quos nam laborum fugiat? Est id sed sit! Ad
-            impedit, dolor dolore quos nesciunt architecto, repellendus veniam
-            hic, minima quidem obcaecati ex iste quibusdam. Dicta iste
-            praesentium enim inventore porro voluptatem, non dignissimos
-            voluptate a et vitae at
-          </p>
-        </>
-      ),
-    },
-    {
-      _id: 5,
-      title: 'Elit Ipsum Sit Amet Consecterur',
-      description: (
-        <>
-          <p>
-            <strong>Lorem ipsum dolor </strong> sit amet consectetur adipisicing
-            elit.
-          </p>
-          <p>
-            Iusto provident adipisci, iste praesentium? Placeat velit aut illum
-            eius id suscipit quos nam laborum fugiat? Est id sed sit! Ad
-            impedit, dolor dolore quos nesciunt architecto, repellendus veniam
-            hic, minima quidem obcaecati ex iste quibusdam. Dicta iste
-            praesentium enim inventore porro voluptatem, non dignissimos
-            voluptate a et vitae at
-          </p>
-        </>
-      ),
-    },
-    {
-      _id: 6,
-      title: 'Elit Ipsum Sit Amet Consecterur',
-      description: (
-        <>
-          <p>
-            <strong>Lorem ipsum dolor </strong> sit amet consectetur adipisicing
-            elit.
-          </p>
-          <p>
-            Iusto provident adipisci, iste praesentium? Placeat velit aut illum
-            eius id suscipit quos nam laborum fugiat? Est id sed sit! Ad
-            impedit, dolor dolore quos nesciunt architecto, repellendus veniam
-            hic, minima quidem obcaecati ex iste quibusdam. Dicta iste
-            praesentium enim inventore porro voluptatem, non dignissimos
-            voluptate a et vitae at
-          </p>
-        </>
-      ),
-    },
-  ]
   return (
     <>
       <Meta title='About Us' />
@@ -353,43 +232,8 @@ const About = () => {
           agencies/institutions to pursue a comprehensive and integrated
           approach to programming.
         </p>
-        <div className='py-5'>
-          <h2 className='fw-bold'>STRATEGIC OBJECTIVES </h2>
 
-          <div className='row'>
-            <div className='col-12 mx-auto'>
-              <div className='accordion' id='accordionExample'>
-                {objectives.map((item) => (
-                  <div key={item._id} className='accordion-item'>
-                    <h2 className='accordion-header' id={`heading${item._id}`}>
-                      <button
-                        className='accordion-button btn-success'
-                        type='button'
-                        data-bs-toggle='collapse'
-                        data-bs-target={`#collapse${item._id}`}
-                        aria-expanded='false'
-                        aria-controls={`collapse${item._id}`}
-                      >
-                        {item.title}
-                      </button>
-                    </h2>
-                    <div
-                      id={`collapse${item._id}`}
-                      className={`accordion-collapse collapse ${
-                        item._id === 1 ? 'show' : ''
-                      }`}
-                      aria-labelledby={`heading${item._id}`}
-                      data-bs-parent='#accordionExample'
-                    >
-                      <div className='accordion-body'>{item.description}</div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-
+        <StrategicObjectives />
         <div className='row gy-3 my-3'>
           <div className='col-md-6 col-12 my-auto'>
             <img src='/image.jpg' className='img-fluid' />

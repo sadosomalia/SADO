@@ -6,7 +6,7 @@ import { Circles } from 'react-loader-spinner'
 export default function Layout({ children }) {
   const [loading, setLoading] = useState(true)
 
-  const seconds = process.env.NODE_ENV === 'production' ? 10000 : 1000
+  const seconds = process.env.NODE_ENV === 'production' ? 5000 : 1000
 
   useEffect(() => {
     const timer = setTimeout(() => {
