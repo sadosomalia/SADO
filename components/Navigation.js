@@ -78,16 +78,16 @@ const Navigation = ({ carousel }) => {
                     </Link>
                   </li>
                   <li>
-                    <Link href='/#about'>
+                    <Link href='/board-of-directors'>
                       <a className='dropdown-item fw-bold'>
                         BOARD OF DIRECTORS
                       </a>
                     </Link>
                   </li>
                   <li>
-                    <Link href='/#about'>
+                    <Link href='/management-and-organization-structure'>
                       <a className='dropdown-item fw-bold'>
-                        ORGANIZATION STRUCTURE
+                        MANAGEMENT & ORGANIZATION STRUCTURE
                       </a>
                     </Link>
                   </li>
@@ -123,33 +123,48 @@ const Navigation = ({ carousel }) => {
                     </Link>
                   </li>
                   <li>
-                    <Link href='/#livelihood'>
-                      <a className='dropdown-item fw-bold'>LIVELIHOOD</a>
+                    <Link href='/#fsn'>
+                      <a className='dropdown-item fw-bold'>
+                        FOOD SECURITY & NUTRITION (FSN)
+                      </a>
                     </Link>
                   </li>
                   <li>
-                    <Link href='/#livelihood'>
-                      <a className='dropdown-item fw-bold'>NUTRITION</a>
+                    <Link href='/#csee'>
+                      <a className='dropdown-item fw-bold'>
+                        CLIMATE SMART ECONOMIC EMPOWERMENT (CSEE)
+                      </a>
                     </Link>
                   </li>
                   <li>
-                    <Link href='/#a'>
-                      <a className='dropdown-item fw-bold'>CRWASH</a>
+                    <Link href='/#crwash'>
+                      <a className='dropdown-item fw-bold'>
+                        CLIMATE RESILIENT WATER, SANITATION & HYGIENE (CRWASH)
+                      </a>
                     </Link>
                   </li>
                   <li>
-                    <Link href='/#about'>
+                    <Link href='/#education'>
+                      <a className='dropdown-item fw-bold'>EDUCATION</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href='/#peace-building'>
+                      <a className='dropdown-item fw-bold'>
+                        PEACE BUILDING & SOCIAL COHESION
+                      </a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href='/#health'>
                       <a className='dropdown-item fw-bold'>HEALTH</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href='/#about'>
-                      <a className='dropdown-item fw-bold'>PEACE BUILDING</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href='/#about'>
-                      <a className='dropdown-item fw-bold'>CSEE</a>
+                    <Link href='/#shelter-settlement'>
+                      <a className='dropdown-item fw-bold'>
+                        SHELTER & SETTLEMENT
+                      </a>
                     </Link>
                   </li>
                 </ul>

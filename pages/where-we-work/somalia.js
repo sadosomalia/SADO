@@ -49,7 +49,10 @@ const Somalia = () => {
 
   return (
     <>
-      <Meta title='Somalia' />
+      <Meta
+        title='Somalia'
+        description='SADO has its head office in Mogadishu, Somalia and an operational and logistics office in Nairobi. It has field base stations in Kismayu, Jubaland and Bardera ,Elwak , Garbaharrey ,Belt Hawa and Dollow Districts of Gedo region, Somalia.'
+      />
       <Navigation carousel={carousel} />
 
       <Map

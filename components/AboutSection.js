@@ -6,19 +6,19 @@ const AboutSection = () => {
     {
       _id: 2,
       title: 'MISSION',
-      description: 'To be the best in the industry',
+      description: 'Our mission is to work with our partners in...',
       image: <FaBullseye className='img-fluid fs-1 mx-auto mt-2' />,
     },
     {
       _id: 1,
       title: 'VISION',
-      description: 'To be the best in the industry',
+      description: 'A horn of Africa in which vulnerable...',
       image: <FaEye className='img-fluid fs-1 mx-auto mt-2' />,
     },
     {
       _id: 3,
       title: 'CORE VALUES',
-      description: 'To be the best in the industry',
+      description: 'SADO believes in, and is guided by...',
       image: <FaHandshake className='img-fluid fs-1 mx-auto mt-2' />,
     },
   ]

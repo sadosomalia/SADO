@@ -2,7 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Meta from '../components/Meta'
 import Navigation from '../components/Navigation'
-import { FaEye, FaBullseye, FaHandshake } from 'react-icons/fa'
+import { FaEye, FaBullseye, FaHandshake, FaCheckCircle } from 'react-icons/fa'
 import StrategicObjectives from '../components/StrategicObjectives'
 
 const About = () => {
@@ -12,7 +12,7 @@ const About = () => {
       title: 'ABOUT PAGE',
       image: '/slide.jpg',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora provident quas ab, dolores eum alias voluptas veritatis culpa sapiente ipsum vero! Vel maiores recusandae quod omnis aliquam voluptatibus ea perferendis.',
+        'Social Life and Agricultural Development Organization (SADO) is a Somalia based Local Non-Governmental Organization (LNGO) established in 1994 with the aim of spearheading local development initiatives in GEDO region and other parts of South-Central Somalia. ',
       height: '540px',
     },
   ]
@@ -22,32 +22,11 @@ const About = () => {
       _id: 2,
       title: 'MISSION',
       description: (
-        <>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eos
-            aspernatur quos doloremque harum magni similique, inventore aperiam
-            commodi voluptates porro id non vero, ab quae asperiores illum
-            consequatur quam?
-          </p>
-          <p>
-            Recusandae, quos tempore rerum, fugit molestiae maiores deleniti,
-            maxime quam doloremque expedita itaque fuga cum amet provident
-            mollitia dicta sit totam ipsa excepturi iusto consequatur? Quasi
-            consectetur tempora repudiandae. Consequuntur! Eveniet laborum neque
-            veniam magnam ipsum eaque illo maxime, quisquam nulla repellendus
-          </p>
-          <p>
-            cupiditate pariatur officiis quasi! Nihil obcaecati quas maxime
-            neque quasi aspernatur. Asperiores labore totam adipisci magni
-            laboriosam omnis.
-          </p>
-          <p>
-            Quod, tempore reprehenderit? Mollitia illum sit quod, ullam
-            reprehenderit eligendi! Odio consequatur alias tenetur adipisci
-            quibusdam, minima ea molestias sit, voluptas quo, iure quasi
-            accusamus blanditiis soluta velit? Nemo, inventore!
-          </p>
-        </>
+        <p>
+          Our mission is to work with our partners in improving the quality of
+          life of vulnerable communities in the Horn of Africa through
+          facilitating humanitarian aid for sustainable development programs
+        </p>
       ),
       image: <FaBullseye className='img-fluid fs-1 mx-auto mt-2' />,
     },
@@ -55,32 +34,10 @@ const About = () => {
       _id: 1,
       title: 'VISION',
       description: (
-        <>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eos
-            aspernatur quos doloremque harum magni similique, inventore aperiam
-            commodi voluptates porro id non vero, ab quae asperiores illum
-            consequatur quam?
-          </p>
-          <p>
-            Recusandae, quos tempore rerum, fugit molestiae maiores deleniti,
-            maxime quam doloremque expedita itaque fuga cum amet provident
-            mollitia dicta sit totam ipsa excepturi iusto consequatur? Quasi
-            consectetur tempora repudiandae. Consequuntur! Eveniet laborum neque
-            veniam magnam ipsum eaque illo maxime, quisquam nulla repellendus
-          </p>
-          <p>
-            cupiditate pariatur officiis quasi! Nihil obcaecati quas maxime
-            neque quasi aspernatur. Asperiores labore totam adipisci magni
-            laboriosam omnis.
-          </p>
-          <p>
-            Quod, tempore reprehenderit? Mollitia illum sit quod, ullam
-            reprehenderit eligendi! Odio consequatur alias tenetur adipisci
-            quibusdam, minima ea molestias sit, voluptas quo, iure quasi
-            accusamus blanditiis soluta velit? Nemo, inventore!
-          </p>
-        </>
+        <p>
+          A horn of Africa in which vulnerable communities live in dignity and
+          security
+        </p>
       ),
       image: <FaEye className='img-fluid fs-1 mx-auto mt-2' />,
     },
@@ -89,45 +46,94 @@ const About = () => {
       title: 'CORE VALUES',
       description: (
         <>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eos
-            aspernatur quos doloremque harum magni similique, inventore aperiam
-            commodi voluptates porro id non vero, ab quae asperiores illum
-            consequatur quam?
-          </p>
-          <p>
-            Recusandae, quos tempore rerum, fugit molestiae maiores deleniti,
-            maxime quam doloremque expedita itaque fuga cum amet provident
-            mollitia dicta sit totam ipsa excepturi iusto consequatur? Quasi
-            consectetur tempora repudiandae. Consequuntur! Eveniet laborum neque
-            veniam magnam ipsum eaque illo maxime, quisquam nulla repellendus
-          </p>
-          <p>
-            cupiditate pariatur officiis quasi! Nihil obcaecati quas maxime
-            neque quasi aspernatur. Asperiores labore totam adipisci magni
-            laboriosam omnis.
-          </p>
-          <p>
-            Quod, tempore reprehenderit? Mollitia illum sit quod, ullam
-            reprehenderit eligendi! Odio consequatur alias tenetur adipisci
-            quibusdam, minima ea molestias sit, voluptas quo, iure quasi
-            accusamus blanditiis soluta velit? Nemo, inventore!
-          </p>
+          <p>SADO believes in, and is guided by the following REDI ideals:</p>
+          <ul className='list-group list-group-flush'>
+            <li className='list-group-item'>
+              <FaCheckCircle className='mb-1 text-success' />
+              <strong> Respect: </strong> We treat all people with dignity and
+              respect.
+            </li>
+            <li className='list-group-item'>
+              <FaCheckCircle className='mb-1 text-success' />
+              <strong> Ethics: </strong> We strive to meet the highest moral and
+              ethical standards.
+            </li>
+            <li className='list-group-item'>
+              <FaCheckCircle className='mb-1 text-success' />
+              <strong> Decisive: </strong> Making sound judgments within our
+              work so that a program activity can progress with pace and
+              confidence.
+            </li>
+            <li className='list-group-item'>
+              <FaCheckCircle className='mb-1 text-success' />
+              <strong> Innovation: </strong> We embrace continuous improvement,
+              bold creativity, and change to make our work more effective and
+              efficient.
+            </li>
+          </ul>
         </>
       ),
       image: <FaHandshake className='img-fluid fs-1 mx-auto mt-2' />,
     },
   ]
 
+  const organizationalCulture = [
+    {
+      _id: 1,
+      title: 'Collaboration',
+      description:
+        'We are better together. We encourage strategic collaboration with our partners to bring out the best solutions and strengthen the fabric of our communities.',
+    },
+    {
+      _id: 2,
+      title: 'Commitment',
+      description:
+        'Those we serve come first in everything we do.  We champion their realization of their full potential to lead fulfilling lives and contribute meaningfully to society.',
+    },
+    {
+      _id: 3,
+      title: 'Results orientation',
+      description:
+        'We are driven by the changes and impacts we exist to create.  We are committed to providing timely and high-quality solutions and services.  We closely collaborate the efforts of each person/ actor in delivering our services.',
+    },
+    {
+      _id: 4,
+      title: 'Open communication',
+      description:
+        'We believe in granting access to information.  We value and use the best approaches competently to communicate amongst ourselves and with others.  We support all stakeholders to understand and express themselves concerning their well-being.',
+    },
+    {
+      _id: 5,
+      title: 'Competence',
+      description:
+        'We are committed to acquiring, developing, and retaining the highest possible quality personnel as a basis of assuring the best organizational performance standards.',
+    },
+    {
+      _id: 6,
+      title: 'Creativity and innovation',
+      description:
+        'We are committed to ensuring a work environment that encourages creativity and embracing of new ideas and technologies to make our work more effective.',
+    },
+  ]
+
   return (
     <>
-      <Meta title='About Us' />
+      <Meta
+        title='About Us'
+        description='Social Life and Agricultural Development Organization (SADO) is a
+              Somalia based Local Non-Governmental Organization (LNGO)
+              established in 1994 with the aim of spearheading local development
+              initiatives in GEDO region and other parts of South-Central
+              Somalia. SADO is legally registered in Kenya and in Somalia'
+      />
       <Navigation carousel={carousel} />
 
       <div className='container py-3'>
         <div className='row gy-3 my-3'>
-          <div className='col-md-6 col-12 my-auto'>
+          <div className='col-12'>
             <h2 className='fw-bold'>ABOUT US</h2>
+          </div>
+          <div className='col-md-4 col-12'>
             <p>
               Social Life and Agricultural Development Organization (SADO) is a
               Somalia based Local Non-Governmental Organization (LNGO)
@@ -146,8 +152,12 @@ const About = () => {
               principle. Our activities are grounded on the rights-based
               approach on the belief that people are entitled to basic
               conditions of living with dignity and have access to equal
-              opportunity as a basis of fulfilling their human potential. SADO
-              therefore seeks to stimulate sustainable developmental change
+              opportunity as a basis of fulfilling their human potential.
+            </p>
+          </div>
+          <div className='col-md-4 col-12'>
+            <p>
+              SADO therefore seeks to stimulate sustainable developmental change
               amongst vulnerable communities living in the Horn of Africa
               region. {"SADO's"} mandate and core business is facilitating
               community development. These ambitions are realized through
@@ -168,7 +178,8 @@ const About = () => {
               include vulnerable and marginalized pastoralists comprising of
               individuals, families, groups and communities.
             </p>
-
+          </div>
+          <div className='col-md-4 col-12'>
             <p>
               SADO has a well-defined and functional internal organizational
               structure that seeks to deliver its strategic objectives. SADO
@@ -177,9 +188,6 @@ const About = () => {
               Policy and strategic guidance, leadership and oversight are
               offered by a diverse and competent Board of Directors.
             </p>
-          </div>
-          <div className='col-md-6 col-12 my-auto'>
-            <img src='/image.jpg' className='img-fluid' />
           </div>
         </div>
 
@@ -236,43 +244,18 @@ const About = () => {
         <StrategicObjectives />
         <div className='row gy-3 my-3'>
           <div className='col-md-6 col-12 my-auto'>
-            <img src='/image.jpg' className='img-fluid' />
+            <img src='/image.jpg' className='img-fluid w-100' />
           </div>
           <div className='col-md-6 col-12 my-auto'>
             <h2 className='fw-bold'>ORGANIZATION CULTURE</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-              amet, distinctio sapiente tempora modi, tempore quia voluptatum
-              sint eligendi molestiae nam accusantium odit! Earum sequi tempore
-              dolores libero quisquam nulla.
-            </p>
-            <p>
-              Aliquid delectus iusto eligendi, rerum nam recusandae molestiae
-              fuga.
-            </p>
 
-            <p>
-              Tenetur doloremque excepturi fugit commodi sint dolore cumque
-              distinctio minus, eveniet pariatur illum dolor soluta asperiores
-              totam officia? Vitae, commodi delectus? Perspiciatis facilis qui
-              quae consequatur rem tempora in reprehenderit deserunt nostrum ad
-              dolorem.
-            </p>
-            <p>
-              Quo quas sunt sint blanditiis voluptatem? Id molestiae consectetur
-              ex molestias delectus obcaecati, saepe maiores mollitia magni.
-            </p>
-            <p>
-              Aliquid delectus iusto eligendi, rerum nam recusandae molestiae
-              fuga.
-            </p>
-            <p>
-              Tenetur doloremque excepturi fugit commodi sint dolore cumque
-              distinctio minus, eveniet pariatur illum dolor soluta asperiores
-              totam officia? Vitae, commodi delectus? Perspiciatis facilis qui
-              quae consequatur rem tempora in reprehenderit deserunt nostrum ad
-              dolorem.
-            </p>
+            <ul className='list-group list-group-flush'>
+              {organizationalCulture.map((o) => (
+                <li key={o._id} className='list-group-item'>
+                  <strong> {o.title}: </strong> {o.description}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

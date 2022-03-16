@@ -72,7 +72,7 @@ header.sticky nav {
 }
 .dropdown-item {
   margin-top: 2px !important;
-  text-align: right;
+  text-align: left;
   background-color: var(--color-secondary) !important;
 }
 
