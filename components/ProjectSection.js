@@ -1,36 +1,35 @@
 /* eslint-disable @next/next/no-img-element */
-import { FaBullseye, FaEye, FaHandshake } from 'react-icons/fa'
 import Link from 'next/link'
 
 const ProjectSection = () => {
   const projects = [
     {
       _id: 1,
-      title: 'LIVELIHOOD AND NUTRITION',
+      title: 'FOOD SECURITY',
       description:
-        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime.',
-      image: '/card.jpg',
+        '34 beneficiaries from kismayo IDPs supported under community lead...',
+      image: '/projects/food.jpg',
     },
     {
       _id: 2,
-      title: 'CRWASH',
+      title: 'WASH',
       description:
-        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime.',
-      image: '/card.jpg',
+        'Construction of new shallow well with mini solar water pump, fencing...',
+      image: '/projects/wash.jpg',
     },
     {
       _id: 3,
-      title: 'EDUCATION',
+      title: 'PROTECTION',
       description:
-        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime.',
-      image: '/card.jpg',
+        '28 IDPs sites were supported with fire prevention/response...',
+      image: '/projects/protection.jpg',
     },
     {
       _id: 4,
-      title: 'HEALTH',
+      title: 'SHELTER',
       description:
-        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime.',
-      image: '/card.jpg',
+        'Site Level Coordination Meeting, Community Mobilization/awareness...',
+      image: '/projects/shelter.jpg',
     },
     {
       _id: 5,
