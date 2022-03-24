@@ -5,7 +5,7 @@ const ManagementStructure = () => {
   const carousel = [
     {
       _id: 1,
-      title: 'M. O. STRUCTURE',
+      title: 'MANAGEMENT STRUCTURE',
       image: '/slide.jpg',
       description:
         'The day to day management affairs of SADO are overseen by a management team whose membership comprises',

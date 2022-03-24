@@ -5,6 +5,7 @@ import BannerSection from '../components/BannerSection'
 import ProjectSection from '../components/ProjectSection'
 import PartnerSection from '../components/PartnerSection'
 import NewsSection from '../components/NewsSection.js'
+import SuccessStorySection from '../components/SuccessStorySection'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <AboutSection />
       <BannerSection />
       <ProjectSection />
+      <SuccessStorySection />
       <PartnerSection />
       <NewsSection />
     </>

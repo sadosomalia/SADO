@@ -76,6 +76,15 @@ const NewsSection = () => {
             </div>
           </div>
         ))}
+
+        {/* load more success news */}
+        <div className='col-12 mt-5 text-center'>
+          <Link href='/news'>
+            <a className='btn btn-outline-success btn-sm rounded-1 shadow'>
+              Load More News
+            </a>
+          </Link>
+        </div>
       </div>
     </div>
   )

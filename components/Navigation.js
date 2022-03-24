@@ -14,25 +14,23 @@ const Navigation = ({ carousel }) => {
   const carouselDef = [
     {
       _id: 1,
-      title: 'LOREM IPSUM DOLOR',
-      image: '/slide.jpg',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora provident quas ab, dolores eum alias voluptas veritatis culpa sapiente ipsum vero! Vel maiores recusandae quod omnis aliquam voluptatibus ea perferendis.',
+      title: 'EDUCATION',
+      image: '/slides/education.jpg',
+      description: 'Markabley primary school in Bardera-girls queuing',
       height: '100%',
     },
     {
       _id: 2,
-      title: 'SIT AMET CONSECTETUR',
-      image: '/slide.jpg',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora provident quas ab, dolores eum alias voluptas veritatis culpa sapiente ipsum vero! Vel maiores recusandae quod omnis aliquam voluptatibus ea perferendis.',
+      title: 'NCA-WFP SCOPE PROJECT',
+      image: '/slides/scope-project.jpg',
+      description: 'Scope beneficiaries redeeming their food from the vendor',
     },
     {
       _id: 3,
-      title: 'ADIPISCING ELIT',
-      image: '/slide.jpg',
+      title: 'SCOPE LIVELIHOOD ACTIVITY',
+      image: '/slides/livelihood.jpg',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora provident quas ab, dolores eum alias voluptas veritatis culpa sapiente ipsum vero! Vel maiores recusandae quod omnis aliquam voluptatibus ea perferendis.',
+        'Scope beneficiaries are performing FFW activities at their farms',
     },
   ]
 
@@ -87,7 +85,7 @@ const Navigation = ({ carousel }) => {
                   <li>
                     <Link href='/management-and-organization-structure'>
                       <a className='dropdown-item fw-bold'>
-                        MANAGEMENT & ORGANIZATION STRUCTURE
+                        MANAGEMENT STRUCTURE
                       </a>
                     </Link>
                   </li>
@@ -98,11 +96,11 @@ const Navigation = ({ carousel }) => {
                       </a>
                     </Link>
                   </li>
-                  <li>
-                    <Link href='/#about'>
-                      <a className='dropdown-item fw-bold'>REGIONAL OFFICES</a>
-                    </Link>
-                  </li>
+                  {/* <li>
+                      <Link href='/#about'>
+                        <a className='dropdown-item fw-bold'>REGIONAL OFFICES</a>
+                      </Link>
+                    </li> */}
                 </ul>
               </li>
               <li className='nav-item dropdown'>
