@@ -76,6 +76,11 @@ const Navigation = ({ carousel }) => {
                     </Link>
                   </li>
                   <li>
+                    <Link href='/network'>
+                      <a className='dropdown-item fw-bold'>OUR NETWORKS</a>
+                    </Link>
+                  </li>
+                  <li>
                     <Link href='/board-of-directors'>
                       <a className='dropdown-item fw-bold'>
                         BOARD OF DIRECTORS
@@ -116,6 +121,60 @@ const Navigation = ({ carousel }) => {
                 </a>
                 <ul className='dropdown-menu' aria-labelledby='navbarDropdown'>
                   <li>
+                    <Link href='/csee'>
+                      <a className='dropdown-item fw-bold'>
+                        CLIMATE SMART ECONOMIC EMPOWERMENT (CSEE)
+                      </a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href='/health-nutrition'>
+                      <a className='dropdown-item fw-bold'>
+                        HEALTH & NUTRITION
+                      </a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href='/csw'>
+                      <a className='dropdown-item fw-bold'>
+                        CLIMATE SMART WASH
+                      </a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href='/peace-building-governance'>
+                      <a className='dropdown-item fw-bold'>
+                        PEACE BUILDING & GOVERNANCE
+                      </a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href='/education'>
+                      <a className='dropdown-item fw-bold'>EDUCATION</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href='/advocacy-campaigning'>
+                      <a className='dropdown-item fw-bold'>
+                        ADVOCACY & CAMPAIGNING
+                      </a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href='/environment-climate-change'>
+                      <a className='dropdown-item fw-bold'>
+                        ENVIRONMENT AND CLIMATE CHANGE
+                      </a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href='/camp-coordination-management'>
+                      <a className='dropdown-item fw-bold'>
+                        CAMP COORDINATION & MANAGEMENT
+                      </a>
+                    </Link>
+                  </li>
+                  <li>
                     <Link href='/#governance'>
                       <a className='dropdown-item fw-bold'>GOVERNANCE</a>
                     </Link>
@@ -128,22 +187,10 @@ const Navigation = ({ carousel }) => {
                     </Link>
                   </li>
                   <li>
-                    <Link href='/#csee'>
-                      <a className='dropdown-item fw-bold'>
-                        CLIMATE SMART ECONOMIC EMPOWERMENT (CSEE)
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
                     <Link href='/#crwash'>
                       <a className='dropdown-item fw-bold'>
                         CLIMATE RESILIENT WATER, SANITATION & HYGIENE (CRWASH)
                       </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href='/#education'>
-                      <a className='dropdown-item fw-bold'>EDUCATION</a>
                     </Link>
                   </li>
                   <li>
