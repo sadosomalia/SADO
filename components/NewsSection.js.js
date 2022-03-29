@@ -49,7 +49,7 @@ const NewsSection = () => {
   ]
   return (
     <div id='news' className='container py-5 my-5'>
-      <h2 className='fw-bold pt-3'>LATEST NEWS</h2>
+      <h2 className='fw-bold'>LATEST NEWS</h2>
       <p className='lead pb-3'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga unde quos
         nam

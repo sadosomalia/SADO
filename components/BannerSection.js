@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const BannerSection = () => {
   return (
-    <div className='jumbotron py-5 my-5 text-center text-light'>
+    <div className='jumbotron py-5 my-5 text-center text-light' id='donate'>
       <div className='container py-5'>
         <h1 className='display-4 fw-bold'>
           {" Small decision can change 'someones' life"}

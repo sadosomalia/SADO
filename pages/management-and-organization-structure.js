@@ -9,7 +9,6 @@ const ManagementStructure = () => {
       image: '/slide.jpg',
       description:
         'The day to day management affairs of SADO are overseen by a management team whose membership comprises',
-      height: '540px',
     },
   ]
 

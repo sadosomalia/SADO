@@ -67,12 +67,12 @@ const Navigation = ({ carousel }) => {
                   data-bs-toggle='dropdown'
                   aria-expanded='false'
                 >
-                  WHO WE ARE
+                  ABOUT US
                 </a>
                 <ul className='dropdown-menu' aria-labelledby='navbarDropdown'>
                   <li>
                     <Link href='/about'>
-                      <a className='dropdown-item fw-bold'>ABOUT US</a>
+                      <a className='dropdown-item fw-bold'>HISTORY</a>
                     </Link>
                   </li>
                   <li>
@@ -187,17 +187,22 @@ const Navigation = ({ carousel }) => {
                   </li>
                 </ul>
               </li>
-              <li className='nav-item'>
-                <Link href='/news'>
-                  <a className='nav-link  ' aria-current='page'>
-                    NEWS
-                  </a>
-                </Link>
-              </li>
+
               <li className='nav-item'>
                 <Link href='/#contact'>
                   <a className='nav-link  ' aria-current='page'>
                     CONTACT US
+                  </a>
+                </Link>
+              </li>
+              <li className='nav-item'>
+                <Link href='/#donate'>
+                  <a
+                    className='nav-link  btn border-0 fw-bold rounded-0 bg-success donate-btn'
+                    style={{ backgroundCOlor: 'green' }}
+                    aria-current='page'
+                  >
+                    DONATE NOW
                   </a>
                 </Link>
               </li>

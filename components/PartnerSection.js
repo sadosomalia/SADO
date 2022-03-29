@@ -1,41 +1,9 @@
-/* eslint-disable @next/next/no-img-element */
+import Image from 'next/image'
 
-const PartnerSection = () => {
-  const partners = [
-    {
-      _id: 1,
-      title: 'SADO',
-      image: '/partner.jpg',
-    },
-    {
-      _id: 2,
-      title: 'SADO',
-      image: '/partner.jpg',
-    },
-    {
-      _id: 3,
-      title: 'SADO',
-      image: '/partner.jpg',
-    },
-    {
-      _id: 4,
-      title: 'SADO',
-      image: '/partner.jpg',
-    },
-    {
-      _id: 5,
-      title: 'SADO',
-      image: '/partner.jpg',
-    },
-    {
-      _id: 6,
-      title: 'SADO',
-      image: '/partner.jpg',
-    },
-  ]
+const PartnerSection = ({ partners }) => {
   return (
-    <div id='partners' className='container py-5 my-5'>
-      <h2 className='fw-bold pt-3'>DONOR PARTNERS </h2>
+    <>
+      <h2 className='fw-bold'>DONOR PARTNERS </h2>
       <p className='lead pb-3'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga unde quos
         nam
@@ -49,28 +17,42 @@ const PartnerSection = () => {
         <div className='carousel-inner'>
           <div className='carousel-item active'>
             <div className='row gy-3'>
-              {partners.map((partner) => (
-                <div key={partner._id} className='col-lg-2 col-md-4 col-6'>
-                  <img
-                    src={partner.image}
-                    className='d-block w-100'
-                    alt={partner.title}
-                  />
-                </div>
-              ))}
+              {partners &&
+                partners.length > 0 &&
+                partners.map((partner) => (
+                  <div
+                    key={partner._id}
+                    className='col-lg-2 col-md-4 col-6 mx-auto'
+                  >
+                    <Image
+                      width={150}
+                      height={150}
+                      src={`http://164.92.157.29${partner.attributes.logo.data.attributes.url}`}
+                      alt={partner.attributes.logo.data.attributes.name}
+                      className='d-block w-100'
+                    />
+                  </div>
+                ))}
             </div>
           </div>
           <div className='carousel-item'>
             <div className='row gy-3'>
-              {partners.map((partner) => (
-                <div key={partner._id} className='col-lg-2 col-md-4 col-6'>
-                  <img
-                    src={partner.image}
-                    className='d-block w-100'
-                    alt={partner.title}
-                  />
-                </div>
-              ))}
+              {partners &&
+                partners.length > 0 &&
+                partners.map((partner) => (
+                  <div
+                    key={partner._id}
+                    className='col-lg-2 col-md-4 col-6 mx-auto'
+                  >
+                    <Image
+                      width={150}
+                      height={150}
+                      src={`http://164.92.157.29${partner.attributes.logo.data.attributes.url}`}
+                      alt={partner.attributes.logo.data.attributes.name}
+                      className='d-block w-100'
+                    />
+                  </div>
+                ))}
             </div>
           </div>
         </div>
@@ -99,7 +81,7 @@ const PartnerSection = () => {
           <span className='visually-hidden'>Next</span>
         </button>
       </div>
-    </div>
+    </>
   )
 }
 

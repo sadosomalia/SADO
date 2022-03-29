@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Image from 'next/image'
 const Carousel = ({ carousel }) => {
   return (
     <div
@@ -31,23 +32,22 @@ const Carousel = ({ carousel }) => {
                 : 'carousel-item '
             }
           >
-            <img
+            <Image
+              width='100%'
+              height='40'
+              layout='responsive'
+              objectFit='cover'
               src={item.image}
-              className='d-block'
+              className='d-block img-fluid w-100'
               alt={item.title}
-              style={{
-                height: carousel[0].height,
-                width: '100%',
-                objectFit: 'cover',
-              }}
             />
             <div
               className='carousel-caption d-none d-md-block animate__bounceIn'
               data-aos='fade-up'
               data-aos-duration='2000'
             >
-              <h5 className='display-1 fw-bold'>{item.title}</h5>
-              <p>{item.description}</p>
+              <h5 className='display-4 fw-bold'>{item.title}</h5>
+              <div>{item.description}</div>
             </div>
           </div>
         ))}

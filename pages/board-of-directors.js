@@ -9,7 +9,6 @@ const BorderOfDirectors = () => {
       image: '/slide.jpg',
       description:
         'The Board of Directors (BOD) are the fiduciaries who steer the organization towards a sustainable future',
-      height: '540px',
     },
   ]
   return (

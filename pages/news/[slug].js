@@ -11,7 +11,6 @@ const Slug = () => {
       image: '/slide.jpg',
       description:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora provident quas ab, dolores eum alias voluptas veritatis culpa sapiente ipsum vero! Vel maiores recusandae quod omnis aliquam voluptatibus ea perferendis.',
-      height: '540px',
     },
   ]
 

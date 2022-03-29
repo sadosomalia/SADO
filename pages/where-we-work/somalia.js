@@ -41,7 +41,6 @@ const Somalia = () => {
           <strong> Dollow Districts of Gedo region, Somalia</strong>.
         </>
       ),
-      height: '540px',
     },
   ]
 
@@ -141,7 +140,7 @@ const Somalia = () => {
       </Map> */}
 
       <div className='container py-3'>
-        <h2 className='fw-bold pt-3'>WHERE WE WORK</h2>
+        <h2 className='fw-bold'>WHERE WE WORK</h2>
         <p className='lead pb-3'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga unde
           quos nam

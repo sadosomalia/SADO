@@ -12,16 +12,16 @@ header nav {
   width: 100%;
   z-index: 10;
   padding: 0 auto !important;
-  background: #8f8f8f59 !important;
+  background: #0c0c0c81 !important;
 }
 header.sticky nav {
   background: #d6d6e3ec !important;
-  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.175) !important;
+  /* box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.175) !important; */
   margin: 0 auto !important;
 }
-/* .navbar-toggler-icon {
-  background-image: url(./images/menu.svg) !important;
-} */
+.navbar-toggler-icon {
+  background-image: url(/menu.png) !important;
+}
 .navbar-toggler {
   box-shadow: none;
   color: antiquewhite !important;
@@ -142,4 +142,11 @@ footer {
   align-items: center;
   background: #000000e8;
   flex-direction: column;
+}
+
+/* donate button */
+.donate-btn {
+  background-color: var(--color-primary) !important;
+  color: var(--color-secondary) !important;
+  transition: 0.8s;
 }
