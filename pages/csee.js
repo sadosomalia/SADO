@@ -6,7 +6,7 @@ const CSEE = () => {
     {
       _id: 1,
       title: 'CLIMATE SMART ECONOMIC EMPOWERMENT / FSL',
-      image: '/slide.jpg',
+      image: '/blank.jpg',
       description: 'What we do in Climate Smart Economic Empowerment / FSL',
     },
   ]
@@ -60,7 +60,7 @@ const CSEE = () => {
       />
       <Navigation carousel={carousel} />
 
-      <div className='container py-3'>
+      <div className='container py-3' style={{ textAlign: 'justify' }}>
         <div className='row gy-3 my-3'>
           <div className='col-lg-8 col-md-10 col-12 mx-auto text-centera'>
             <p>
@@ -74,7 +74,7 @@ const CSEE = () => {
             <ol className='list-group list-group-numbered'>
               {data.map((d) => (
                 <li key={d._id} className='list-group-item border-0'>
-                  {d.title} <br /> {d.description}
+                  {d.title} <br /> <p>{d.description}</p>
                 </li>
               ))}
             </ol>

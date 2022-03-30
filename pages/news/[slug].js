@@ -8,7 +8,7 @@ const Slug = () => {
     {
       _id: 1,
       title: 'CULPA ASERNATUR NISI',
-      image: '/slide.jpg',
+      image: '/blank.jpg',
       description:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora provident quas ab, dolores eum alias voluptas veritatis culpa sapiente ipsum vero! Vel maiores recusandae quod omnis aliquam voluptatibus ea perferendis.',
     },
@@ -74,7 +74,9 @@ const Slug = () => {
         <div className='row gy-3'>
           <div className='col-lg-8 col-md-10 col-12 mx-auto'>
             <h2 className='fw-bold text-center'>{newDetail.title}</h2>
-            <div className='mt-4'>{newDetail.description}</div>
+            <div className='mt-4' style={{ textAlign: 'justify' }}>
+              {newDetail.description}
+            </div>
           </div>
         </div>
       </div>

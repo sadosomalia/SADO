@@ -6,7 +6,7 @@ const HealthNutrition = () => {
     {
       _id: 1,
       title: 'Health & Nutrition',
-      image: '/slide.jpg',
+      image: '/blank.jpg',
       description:
         'SADO is working in some of the world’s most vulnerable communities to ensure that no one need die from curable diseases or suffer chronic malnutrition. SADO offers integrated health and nutrition services to vulnerable populations in various locations and these are inclusive of',
     },
@@ -45,7 +45,7 @@ const HealthNutrition = () => {
       />
       <Navigation carousel={carousel} />
 
-      <div className='container py-3'>
+      <div className='container py-3' style={{ textAlign: 'justify' }}>
         <div className='row gy-3 my-3'>
           <div className='col-lg-8 col-md-10 col-12 mx-auto text-centera'>
             <p>

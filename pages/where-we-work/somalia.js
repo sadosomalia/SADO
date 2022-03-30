@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import Meta from '../../components/Meta'
 import Navigation from '../../components/Navigation'
-import Link from 'next/link'
+import Image from 'next/image'
 
 import Map, { Marker } from 'react-map-gl'
 import 'mapbox-gl/dist/mapbox-gl.css'
@@ -29,7 +29,7 @@ const Somalia = () => {
     {
       _id: 1,
       title: 'SOMALIA',
-      image: '/slide.jpg',
+      image: '/blank.jpg',
       description: (
         <>
           SADO has its head office in <strong>Mogadishu, Somalia </strong> and
@@ -159,8 +159,16 @@ const Somalia = () => {
         </div>
       </div>
 
-      <div className='container py-3'>
-        <div className='row gy-4'>
+      <div className='container py-3 text-center'>
+        <Image
+          width='760'
+          height='1000'
+          src='/somalia.png'
+          alt='somalia'
+          className='img-fluid'
+        />
+
+        {/* <div className='row gy-4'>
           {regions.map((n) => (
             <div key={n._id} className='col-lg-3 col-md-4 col-sm-6 col-12'>
               <div className='card border-0 rounded-0 animate__bounceIn'>
@@ -181,7 +189,7 @@ const Somalia = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </>
   )

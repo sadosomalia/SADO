@@ -19,17 +19,17 @@ const PartnerSection = ({ partners }) => {
             <div className='row gy-3'>
               {partners &&
                 partners.length > 0 &&
-                partners.map((partner) => (
+                partners.slice(0, 4).map((partner) => (
                   <div
                     key={partner._id}
-                    className='col-lg-2 col-md-4 col-6 mx-auto'
+                    className='col-lg-2 col-md-4 col-6 mx-auto shadow text-center'
                   >
                     <Image
-                      width={150}
-                      height={150}
+                      width='100%'
+                      height='100%'
                       src={`http://164.92.157.29${partner.attributes.logo.data.attributes.url}`}
                       alt={partner.attributes.logo.data.attributes.name}
-                      className='d-block w-100'
+                      className='img-fluid'
                     />
                   </div>
                 ))}
@@ -39,17 +39,17 @@ const PartnerSection = ({ partners }) => {
             <div className='row gy-3'>
               {partners &&
                 partners.length > 0 &&
-                partners.map((partner) => (
+                partners.slice(4, 8).map((partner) => (
                   <div
                     key={partner._id}
-                    className='col-lg-2 col-md-4 col-6 mx-auto'
+                    className='col-lg-2 col-md-4 col-6 mx-auto shadow text-center'
                   >
                     <Image
-                      width={150}
-                      height={150}
+                      width={'100%'}
+                      height={'100%'}
                       src={`http://164.92.157.29${partner.attributes.logo.data.attributes.url}`}
                       alt={partner.attributes.logo.data.attributes.name}
-                      className='d-block w-100'
+                      className='img-fluid'
                     />
                   </div>
                 ))}

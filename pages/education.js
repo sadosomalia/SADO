@@ -6,7 +6,7 @@ const Education = () => {
     {
       _id: 1,
       title: 'EDUCATION',
-      image: '/slide.jpg',
+      image: '/blank.jpg',
       description:
         'SADO works with local schools in Somalia as well as other organizations to provide education opportunities that are fairer, more equitable, and effective',
     },
@@ -44,7 +44,7 @@ const Education = () => {
       />
       <Navigation carousel={carousel} />
 
-      <div className='container py-3'>
+      <div className='container py-3' style={{ textAlign: 'justify' }}>
         <div className='row gy-3 my-3'>
           <div className='col-lg-8 col-md-10 col-12 mx-auto text-centera'>
             <p>

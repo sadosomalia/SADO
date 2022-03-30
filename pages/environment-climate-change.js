@@ -6,7 +6,7 @@ const Environment = () => {
     {
       _id: 1,
       title: 'ENVIRONMENT & CLIMATE CHANGE',
-      image: '/slide.jpg',
+      image: '/blank.jpg',
       description:
         'SADO works to improve water security, promote local livelihoods, and to implement climate resilient agriculture activities in the kismayo area. SADO implements a number of strategies to address the following: climate change impacts; drought management; flood mitigation; and health response to environmental disasters. SADO has implemented the following activities to mitigate the effects of drought and climate change',
     },
@@ -36,7 +36,7 @@ const Environment = () => {
       />
       <Navigation carousel={carousel} />
 
-      <div className='container py-3'>
+      <div className='container py-3' style={{ textAlign: 'justify' }}>
         <div className='row gy-3 my-3'>
           <div className='col-lg-8 col-md-10 col-12 mx-auto text-centera'>
             <p>

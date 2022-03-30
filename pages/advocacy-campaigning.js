@@ -6,7 +6,7 @@ const AdvocacyCampaigning = () => {
     {
       _id: 1,
       title: 'ADVOCACY & CAMPAIGNING',
-      image: '/slide.jpg',
+      image: '/blank.jpg',
       description:
         'SADO works with the local community to advocate for change in a variety of subjects including',
     },
@@ -55,7 +55,7 @@ const AdvocacyCampaigning = () => {
       />
       <Navigation carousel={carousel} />
 
-      <div className='container py-3'>
+      <div className='container py-3 ' style={{ textAlign: 'justify' }}>
         <div className='row gy-3 my-3'>
           <div className='col-lg-8 col-md-10 col-12 mx-auto text-centera'>
             <p>

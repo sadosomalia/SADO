@@ -10,7 +10,7 @@ const About = () => {
     {
       _id: 1,
       title: 'ABOUT PAGE',
-      image: '/slide.jpg',
+      image: '/blank.jpg',
       description:
         'Social Life and Agricultural Development Organization (SADO) is a Somalia based Local Non-Governmental Organization (LNGO) established in 1994 with the aim of spearheading local development initiatives in GEDO region and other parts of South-Central Somalia. ',
     },
@@ -127,7 +127,7 @@ const About = () => {
       />
       <Navigation carousel={carousel} />
 
-      <div className='container py-3'>
+      <div className='container py-3 ' style={{ textAlign: 'justify' }}>
         <div className='row gy-3 my-3'>
           <div className='col-12'>
             <h2 className='fw-bold'>ABOUT US</h2>
@@ -201,7 +201,9 @@ const About = () => {
                 <div className='card-body text-center p-2'>
                   <h5 className='card-text fw-bold'>{item.title}</h5>
                   <div className='card-text'>
-                    <div className='text-start'>{item.description}</div>
+                    <div style={{ textAlign: 'justify' }}>
+                      {item.description}
+                    </div>
                   </div>
                 </div>
               </div>

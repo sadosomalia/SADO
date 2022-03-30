@@ -8,7 +8,7 @@ const News = () => {
     {
       _id: 1,
       title: 'NEWS PAGE',
-      image: '/slide.jpg',
+      image: '/blank.jpg',
       description:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora provident quas ab, dolores eum alias voluptas veritatis culpa sapiente ipsum vero! Vel maiores recusandae quod omnis aliquam voluptatibus ea perferendis.',
     },

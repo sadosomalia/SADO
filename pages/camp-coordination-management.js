@@ -6,7 +6,7 @@ const Camp = () => {
     {
       _id: 1,
       title: 'CAMP COORDINATION AND CAMP MANAGEMENT ',
-      image: '/slide.jpg',
+      image: '/blank.jpg',
       description:
         'SADO works closely with local and international partners, UN agencies and other NGOs in the establishment, management and coordination of xxxxxxx number of IDP camps, which is home to approximately 460,000 IDPs',
     },
@@ -20,7 +20,7 @@ const Camp = () => {
       />
       <Navigation carousel={carousel} />
 
-      <div className='container py-3'>
+      <div className='container py-3 ' style={{ textAlign: 'justify' }}>
         <div className='row gy-3 my-3'>
           <div className='col-lg-8 col-md-10 col-12 mx-auto text-centera'>
             <p>

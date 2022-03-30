@@ -12,7 +12,7 @@ const Project = ({ project, error }) => {
         project && project.attributes
           ? project.attributes.title.toUpperCase()
           : '',
-      image: '/slide.jpg',
+      image: '/blank.jpg',
       description: markdown(project ? project.attributes.caption : ''),
     },
   ]
@@ -38,7 +38,7 @@ const Project = ({ project, error }) => {
             <h2 className='fw-bold text-center d-block d-md-none'>
               {project && project.attributes && project.attributes.title}
             </h2>
-            <div className='mt-4'>
+            <div className='mt-4' style={{ textAlign: 'justify' }}>
               {markdown(
                 project && project.attributes && project.attributes.content
               )}

@@ -6,7 +6,7 @@ const OurNetworks = () => {
     {
       _id: 1,
       title: 'OUR NETWORKS',
-      image: '/slide.jpg',
+      image: '/blank.jpg',
       description:
         'Our networks at the National, International and the NGO fora',
     },
@@ -20,7 +20,7 @@ const OurNetworks = () => {
       />
       <Navigation carousel={carousel} />
 
-      <div className='container py-3'>
+      <div className='container py-3' style={{ textAlign: 'justify' }}>
         <div className='row gy-3 my-3'>
           <div className='col-lg-8 col-md-10 col-12 mx-auto text-centera'>
             <p>

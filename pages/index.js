@@ -47,7 +47,7 @@ export default function Home({ error, projects, stories, partners }) {
         })
       ) : (
         <div id='partners' className='container my-3'>
-          <PartnerSection partners={partners && partners.slice(0, 6)} />
+          <PartnerSection partners={partners && partners} />
         </div>
       )}
 

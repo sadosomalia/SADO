@@ -6,7 +6,7 @@ const CSW = () => {
     {
       _id: 1,
       title: 'PEACE BUILDING & GOVERNANCE',
-      image: '/slide.jpg',
+      image: '/blank.jpg',
       description:
         'SADO works with local communities to build resilience and peace in South- Central Somalia. These projects include',
     },
@@ -45,7 +45,7 @@ const CSW = () => {
       />
       <Navigation carousel={carousel} />
 
-      <div className='container py-3'>
+      <div className='container py-3' style={{ textAlign: 'justify' }}>
         <div className='row gy-3 my-3'>
           <div className='col-lg-8 col-md-10 col-12 mx-auto text-centera'>
             <p>

@@ -10,7 +10,7 @@ const Story = ({ story, error }) => {
       _id: 1,
       title:
         story && story.attributes ? story.attributes.title.toUpperCase() : '',
-      image: '/slide.jpg',
+      image: '/blank.jpg',
       description: markdown(story ? story.attributes.caption : ''),
     },
   ]
@@ -36,7 +36,7 @@ const Story = ({ story, error }) => {
             <h2 className='fw-bold text-center d-block d-md-none'>
               {story && story.attributes && story.attributes.title}
             </h2>
-            <div className='mt-4'>
+            <div className='mt-4' style={{ textAlign: 'justify' }}>
               {markdown(story && story.attributes && story.attributes.content)}
             </div>
           </div>

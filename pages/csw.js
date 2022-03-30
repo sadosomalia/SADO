@@ -6,7 +6,7 @@ const CSW = () => {
     {
       _id: 1,
       title: 'CLIMATE SMART WASH - (CSW)',
-      image: '/slide.jpg',
+      image: '/blank.jpg',
       description:
         'SADO works with local government agencies and communities across Somalia to improve access to water and sanitation services in the areas where they operate. SADO provides CSW programs that compose of',
     },
@@ -45,7 +45,7 @@ const CSW = () => {
       />
       <Navigation carousel={carousel} />
 
-      <div className='container py-3'>
+      <div className='container py-3 ' style={{ textAlign: 'justify' }}>
         <div className='row gy-3 my-3'>
           <div className='col-lg-8 col-md-10 col-12 mx-auto text-centera'>
             <p>

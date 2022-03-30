@@ -6,7 +6,7 @@ const ManagementStructure = () => {
     {
       _id: 1,
       title: 'MANAGEMENT STRUCTURE',
-      image: '/slide.jpg',
+      image: '/blank.jpg',
       description:
         'The day to day management affairs of SADO are overseen by a management team whose membership comprises',
     },
@@ -55,7 +55,7 @@ const ManagementStructure = () => {
       />
       <Navigation carousel={carousel} />
 
-      <div className='container py-3'>
+      <div className='container py-3' style={{ textAlign: 'justify' }}>
         <div className='row gy-3 my-3'>
           <div className='col-lg-8 col-md-10 col-12 mx-auto'>
             <p>

@@ -6,7 +6,7 @@ const BorderOfDirectors = () => {
     {
       _id: 1,
       title: 'BOARD OF DIRECTORS',
-      image: '/slide.jpg',
+      image: '/blank.jpg',
       description:
         'The Board of Directors (BOD) are the fiduciaries who steer the organization towards a sustainable future',
     },
@@ -23,7 +23,7 @@ const BorderOfDirectors = () => {
       />
       <Navigation carousel={carousel} />
 
-      <div className='container py-3'>
+      <div className='container py-3 ' style={{ textAlign: 'justify' }}>
         <div className='row gy-3 my-3'>
           <div className='col-lg-8 col-md-10 col-12 mx-auto text-centera'>
             <p>
