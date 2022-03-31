@@ -8,10 +8,15 @@ const BannerSection = () => {
           {" Small decision can change 'someones' life"}
         </h1>
         <p className='lead'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga unde
-          quos nam. Quaerat dolorem modi adipisci? Quia optio totam, nisi
-          quibusdam accusamus veniam quidem? Quasi minima aliquam voluptate modi
-          id.
+          If you wish to support {`SADO's`} work and learning initiatives,
+          please donate today. When you donate, you are partnering with Somali
+          communities to provide Water, Food, Healthcare, Education and more to
+          poor households in the country.
+        </p>
+        <p className='lead'>
+          If you would like to make a one-time donation or if you would like
+          recurring monthly donations, please click the DONATE button below.
+          Thank You!
         </p>
 
         <p className='lead'>

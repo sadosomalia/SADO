@@ -34,7 +34,7 @@ const Carousel = ({ carousel }) => {
           >
             <Image
               width='100%'
-              height='40'
+              height={carousel && carousel.length > 1 ? '40' : '30'}
               layout='responsive'
               objectFit='cover'
               src={item.image}
@@ -47,7 +47,7 @@ const Carousel = ({ carousel }) => {
               data-aos-duration='2000'
             >
               <h5 className='display-4 fw-bold'>{item.title}</h5>
-              <div>{item.description}</div>
+              <div className='fs-5'>{item.description}</div>
             </div>
           </div>
         ))}

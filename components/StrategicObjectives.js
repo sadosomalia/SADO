@@ -137,7 +137,7 @@ const StrategicObjectives = () => {
       _id: 2,
       title: (
         <span>
-          To ensure food security and income through integrated FSL and cash
+          To ensure food security and income through integrated FSN and cash
           interventions for crisis-affected households while investing in
           resilience activities to support the protection and restoration of
           livelihoods

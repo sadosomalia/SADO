@@ -139,11 +139,16 @@ const Somalia = () => {
         </Marker>
       </Map> */}
 
-      <div className='container py-3'>
+      <div className='container py-3' style={{ textAlign: 'justify' }}>
         <h2 className='fw-bold'>WHERE WE WORK</h2>
         <p className='lead pb-3'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga unde
-          quos nam
+          SADO has its head office in <strong>Mogadishu, Somalia </strong> and
+          an operational and logistics office in <strong> Nairobi</strong>. It
+          has field base stations in
+          <strong> Kismayu, Jubaland </strong> and <strong>Bardera </strong>,
+          <strong>Elwak </strong>, <strong>Garbaharrey </strong>,
+          <strong>Belt Hawa</strong> and
+          <strong> Dollow Districts of Gedo region, Somalia</strong>.
         </p>
 
         <div className='row d-block d-md-none'>

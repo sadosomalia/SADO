@@ -85,7 +85,7 @@ header.sticky nav {
 .jumbotron {
   background: url('/adbanner.jpg') no-repeat center;
   background-size: cover;
-  background-color: #353535af;
+  background-color: #770909af;
 }
 .donate-btn {
   transition: 0.8s;

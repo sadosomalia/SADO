@@ -6,8 +6,10 @@ const SuccessStorySection = ({ stories, loadMore = true }) => {
     <>
       <h2 className='fw-bold'>SUCCESS STORIES</h2>
       <p className='lead pb-3'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga unde quos
-        nam
+        Our success stories are many but we highlight a few in our program
+        areas. Our purpose in sharing these success stories is to encourage the
+        youth, women and other vulnerable groups to take action and contribute
+        to the development of the communities.
       </p>
 
       <div className='row gy-3'>

@@ -1,11 +1,11 @@
 import Meta from '../components/Meta'
 import Navigation from '../components/Navigation'
 
-const CSW = () => {
+const CRWASH = () => {
   const carousel = [
     {
       _id: 1,
-      title: 'CLIMATE SMART WASH - (CSW)',
+      title: 'CLIMATE RESILIENT WATER, SANITATION & HYGIENE (CRWASH)',
       image: '/blank.jpg',
       description:
         'SADO works with local government agencies and communities across Somalia to improve access to water and sanitation services in the areas where they operate. SADO provides CSW programs that compose of',
@@ -40,7 +40,7 @@ const CSW = () => {
   return (
     <>
       <Meta
-        title='Climate Smart WASH – (CSW)'
+        title='Climate Resilient Water, Sanitation and Hygiene (CRWASH)'
         description='SADO works with local government agencies and communities across Somalia to improve access to water and sanitation services in the areas where they operate. SADO provides CSW programs that compose of'
       />
       <Navigation carousel={carousel} />
@@ -68,4 +68,4 @@ const CSW = () => {
   )
 }
 
-export default CSW
+export default CRWASH

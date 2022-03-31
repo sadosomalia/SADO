@@ -22,13 +22,13 @@ const Footer = () => {
     {
       _id: 2,
       office: 'Kismayu Office',
-      address: 'Behind Red Cross Office',
+      address: 'Behind former Red Crescent Office',
       phone: '+252614122227',
       phoneText: '+252-614-122-227',
     },
     {
       _id: 3,
-      office: 'Bardera Office',
+      office: 'Gedo Regional Office',
       address: 'Opposite Hormuud Branch',
       phone: '+252614122228',
       phoneText: '+252-614-122-228',

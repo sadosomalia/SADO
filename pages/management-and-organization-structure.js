@@ -8,7 +8,7 @@ const ManagementStructure = () => {
       title: 'MANAGEMENT STRUCTURE',
       image: '/blank.jpg',
       description:
-        'The day to day management affairs of SADO are overseen by a management team whose membership comprises',
+        'The day to day leadership and management of SADO are overseen by a competent and qualified management team led by Executive Director',
     },
   ]
 

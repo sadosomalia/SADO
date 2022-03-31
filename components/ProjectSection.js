@@ -6,8 +6,9 @@ const ProjectSection = ({ projects, loadMore = true }) => {
     <>
       <h2 className='fw-bold'>PROJECTS</h2>
       <p className='lead pb-3'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga unde quos
-        nam
+        SADO has implemented a number of projects that is aimed at improving the
+        livelihood, water, sanitation, hygiene and protection of the vulnerable
+        communities in Somalia.
       </p>
 
       <div className='row gy-3'>

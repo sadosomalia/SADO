@@ -9,10 +9,10 @@ const About = () => {
   const carousel = [
     {
       _id: 1,
-      title: 'ABOUT PAGE',
+      title: 'ABOUT US',
       image: '/blank.jpg',
       description:
-        'Social Life and Agricultural Development Organization (SADO) is a Somalia based Local Non-Governmental Organization (LNGO) established in 1994 with the aim of spearheading local development initiatives in GEDO region and other parts of South-Central Somalia. ',
+        'Social Life and Agricultural Development Organization (SADO) is a Somalia based Local Non-Governmental Organization (LNGO) established in 1994 with the aim of spearheading local development initiatives in Somalia. ',
     },
   ]
 
@@ -23,8 +23,8 @@ const About = () => {
       description: (
         <p>
           Our mission is to work with our partners in improving the quality of
-          life of vulnerable communities in the Horn of Africa through
-          facilitating humanitarian aid for sustainable development programs
+          life of vulnerable communities in Somalia through facilitating
+          humanitarian aid and sustainable development programs
         </p>
       ),
       image: <FaBullseye className='img-fluid fs-1 mx-auto mt-2' />,
@@ -45,31 +45,11 @@ const About = () => {
       title: 'CORE VALUES',
       description: (
         <>
-          <p>SADO believes in, and is guided by the following REDI ideals:</p>
-          <ul className='list-group list-group-flush'>
-            <li className='list-group-item'>
-              <FaCheckCircle className='mb-1 text-success' />
-              <strong> Respect: </strong> We treat all people with dignity and
-              respect.
-            </li>
-            <li className='list-group-item'>
-              <FaCheckCircle className='mb-1 text-success' />
-              <strong> Ethics: </strong> We strive to meet the highest moral and
-              ethical standards.
-            </li>
-            <li className='list-group-item'>
-              <FaCheckCircle className='mb-1 text-success' />
-              <strong> Decisive: </strong> Making sound judgments within our
-              work so that a program activity can progress with pace and
-              confidence.
-            </li>
-            <li className='list-group-item'>
-              <FaCheckCircle className='mb-1 text-success' />
-              <strong> Innovation: </strong> We embrace continuous improvement,
-              bold creativity, and change to make our work more effective and
-              efficient.
-            </li>
-          </ul>
+          <p>
+            SADO believes in, and is guided by the following ideals: respect,
+            moral and ethical standards, making sound judgments in our
+            programming and innovations.
+          </p>
         </>
       ),
       image: <FaHandshake className='img-fluid fs-1 mx-auto mt-2' />,
@@ -245,7 +225,7 @@ const About = () => {
         <StrategicObjectives />
         <div className='row gy-3 my-3'>
           <div className='col-md-6 col-12 my-auto'>
-            <img src='/image.jpg' className='img-fluid w-100' />
+            <img src='/organization.jpeg' className='img-fluid w-100' />
           </div>
           <div className='col-md-6 col-12 my-auto'>
             <h2 className='fw-bold'>ORGANIZATION CULTURE</h2>

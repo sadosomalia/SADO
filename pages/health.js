@@ -5,7 +5,7 @@ const HealthNutrition = () => {
   const carousel = [
     {
       _id: 1,
-      title: 'Health & Nutrition',
+      title: 'HEALTH',
       image: '/blank.jpg',
       description:
         'SADO is working in some of the world’s most vulnerable communities to ensure that no one need die from curable diseases or suffer chronic malnutrition. SADO offers integrated health and nutrition services to vulnerable populations in various locations and these are inclusive of',
@@ -40,7 +40,7 @@ const HealthNutrition = () => {
   return (
     <>
       <Meta
-        title='Health & Nutrition'
+        title='Health'
         description='SADO is working in some of the world’s most vulnerable communities to ensure that no one need die from curable diseases or suffer chronic malnutrition. SADO offers integrated health and nutrition services to vulnerable populations in various locations and these are inclusive of:'
       />
       <Navigation carousel={carousel} />
