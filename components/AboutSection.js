@@ -21,7 +21,7 @@ const AboutSection = () => {
       _id: 3,
       title: 'CORE VALUES',
       description:
-        'SADO believes in, and is guided by the following REDI ideals...',
+        'SADO believes in, and is guided by the following ideals....',
       image: <FaHandshake className='img-fluid fs-1 mx-auto mt-2' />,
     },
   ]
