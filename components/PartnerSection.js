@@ -3,8 +3,10 @@ import Image from 'next/image'
 const PartnerSection = ({ partners }) => {
   return (
     <>
-      <h2 className='fw-bold'>DONOR PARTNERS </h2>
-      <p className='lead pb-3'>Some of our current and past donors.</p>
+      <h2 className='fw-bold'>DONOR AND PARTNERS </h2>
+      <p className='lead pb-3'>
+        Some of our current and past donors and partners.
+      </p>
 
       <div
         id='carouselExampleControls'

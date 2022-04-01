@@ -34,7 +34,7 @@ const AboutSection = () => {
             Social Life and Agricultural Development Organization (SADO) is a
             Somalia based Local Non-Governmental Organization (LNGO) established
             in 1994 with the aim of spearheading local development initiatives
-            in GEDO region and other parts of South-Central Somalia.
+            in Somalia.
           </p>
         </div>
       </div>
