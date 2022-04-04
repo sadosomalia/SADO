@@ -182,6 +182,35 @@ const Navigation = ({ carousel }) => {
                   </li>
                 </ul>
               </li>
+              <li className='nav-item dropdown'>
+                <a
+                  className='nav-link dropdown-toggle'
+                  href='#'
+                  id='navbarDropdown'
+                  role='button'
+                  data-bs-toggle='dropdown'
+                  aria-expanded='false'
+                >
+                  VACANCIES & POSTINGS
+                </a>
+                <ul className='dropdown-menu' aria-labelledby='navbarDropdown'>
+                  <li>
+                    <Link href='/vacancies-postings/#vacancies'>
+                      <a className='dropdown-item fw-bold'>VACANCIES</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href='/vacancies-postings/#tenders'>
+                      <a className='dropdown-item fw-bold'>TENDERS</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href='/vacancies-postings/#downloads'>
+                      <a className='dropdown-item fw-bold'>DOWNLOADS</a>
+                    </Link>
+                  </li>
+                </ul>
+              </li>
 
               <li className='nav-item'>
                 <Link href='/#contact'>

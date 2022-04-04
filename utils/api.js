@@ -51,3 +51,7 @@ export const getStory = async (slug) =>
 // GET => METHOD => ALL PARTNERS
 export const getPartners = async () =>
   await dynamicAPI('get', `${url}/partners?populate=*`, {})
+
+// GET => METHOD => ALL VACANCIES & POSTINGS
+export const getVacanciesPostings = async () =>
+  await dynamicAPI('get', `${url}/vacancies-and-postings?populate=*`, {})
