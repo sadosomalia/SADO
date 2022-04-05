@@ -20,7 +20,7 @@ const ProjectSection = ({ projects, loadMore = true }) => {
                 <Image
                   width={300}
                   height={300}
-                  src={`http://164.92.157.29${project.attributes.image.data[0].attributes.url}`}
+                  src={`https://api.sadosomalia.org${project.attributes.image.data[0].attributes.url}`}
                   alt={project.attributes.image.data[0].attributes.name}
                   className='card-img-top img-fluid'
                 />

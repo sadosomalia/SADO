@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 // Base URL
-const url = 'http://164.92.157.29/api'
+const url = 'https://api.sadosomalia.org/api'
 
 // Global API Call Function
 export const dynamicAPI = async (method, url, obj = {}) => {

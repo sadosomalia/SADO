@@ -38,7 +38,7 @@ const VacanciesPostings = ({ vacancies, error }) => {
                   {v.attributes.download &&
                     v.attributes.download.data.map((d) => (
                       <a
-                        href={`http://164.92.157.29${d.attributes.url}`}
+                        href={`https://api.sadosomalia.org${d.attributes.url}`}
                         key={d.id}
                         target='_blank'
                         rel='noreferrer'

@@ -26,7 +26,7 @@ const PartnerSection = ({ partners }) => {
                     <Image
                       width='100%'
                       height='100%'
-                      src={`http://164.92.157.29${partner.attributes.logo.data.attributes.url}`}
+                      src={`https://api.sadosomalia.org${partner.attributes.logo.data.attributes.url}`}
                       alt={partner.attributes.logo.data.attributes.name}
                       className='img-fluid'
                     />
@@ -46,7 +46,7 @@ const PartnerSection = ({ partners }) => {
                     <Image
                       width={'100%'}
                       height={'100%'}
-                      src={`http://164.92.157.29${partner.attributes.logo.data.attributes.url}`}
+                      src={`https://api.sadosomalia.org${partner.attributes.logo.data.attributes.url}`}
                       alt={partner.attributes.logo.data.attributes.name}
                       className='img-fluid'
                     />

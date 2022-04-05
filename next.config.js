@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
   images: {
-    domains: ['source.unsplash.com', 'localhost', '164.92.157.29'],
+    domains: ['source.unsplash.com', 'localhost', 'api.sadosomalia.org'],
   },
   // eslint: { ignoreDuringBuilds: true },
 }
