@@ -16,13 +16,13 @@ const VacanciesPostings = ({ vacancies, error }) => {
       _id: 1,
       title: 'VACANCIES & POSTINGS',
       image: '/blank.jpg',
-      description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit.`,
+      description: ``,
     },
   ]
 
   return (
     <>
-      <Meta title='Vacancies & Postings' description='Lorem ipsum' />
+      <Meta title='Vacancies & Postings' />
       <Navigation carousel={carousel} />
 
       <div className='container py-3' style={{ textAlign: 'justify' }}>
