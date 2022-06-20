@@ -18,9 +18,9 @@ const PartnerSection = ({ partners }) => {
             <div className='row gy-3'>
               {partners &&
                 partners.length > 0 &&
-                partners.slice(4, 8).map((partner) => (
+                partners.slice(4, 8).map((partner, i) => (
                   <div
-                    key={partner._id}
+                    key={i}
                     className='col-lg-2 col-md-4 col-6 mx-auto shadow text-center'
                   >
                     <Image
@@ -38,9 +38,9 @@ const PartnerSection = ({ partners }) => {
             <div className='row gy-3'>
               {partners &&
                 partners.length > 0 &&
-                partners.slice(0, 4).map((partner) => (
+                partners.slice(0, 4).map((partner, i) => (
                   <div
-                    key={partner._id}
+                    key={i}
                     className='col-lg-2 col-md-4 col-6 mx-auto shadow text-center'
                   >
                     <Image

@@ -40,6 +40,7 @@ const Carousel = ({ carousel }) => {
               src={item.image}
               className='d-block img-fluid w-100'
               alt={item.title}
+              priority
             />
             <div
               className='carousel-caption d-none d-md-block animate__bounceIn'
