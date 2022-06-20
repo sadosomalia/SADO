@@ -3,7 +3,10 @@ import Navigation from '../components/Navigation'
 import { getVacanciesPostings } from '../utils/api'
 
 const VacanciesPostings = ({ vacancies, error }) => {
-  const vacanciesReversed = vacancies.reverse()
+  // sort by createdAt
+  vacancies.sort((a, b) => {
+    return new Date(b.attributes.createdAt) - new Date(a.attributes.createdAt)
+  })
 
   if (error) {
     return (
@@ -32,8 +35,8 @@ const VacanciesPostings = ({ vacancies, error }) => {
           <div className='col-lg-8 col-md-10 col-12 mx-auto text-centera'>
             <h3>Vacancies & Postings</h3>
 
-            {vacanciesReversed &&
-              vacanciesReversed.map((v) => (
+            {vacancies &&
+              vacancies.map((v) => (
                 <div key={v.id} className='my-3 shadow-sm p-3'>
                   <h5>{v.attributes.title}</h5>
                   <p>{v.attributes.description}</p>
@@ -51,7 +54,7 @@ const VacanciesPostings = ({ vacancies, error }) => {
                   <br />
                   <br />
                   <span className='text-muted text-end'>
-                    Published At: {v.attributes.publishedAt.slice(0, 10)}
+                    Published At: {v.attributes.createdAt.slice(0, 10)}
                   </span>
                 </div>
               ))}
