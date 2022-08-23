@@ -4,11 +4,11 @@ import AboutSection from '../components/AboutSection'
 import BannerSection from '../components/BannerSection'
 import ProjectSection from '../components/ProjectSection'
 import PartnerSection from '../components/PartnerSection'
-// import NewsSection from '../components/NewsSection.js'
 import SuccessStorySection from '../components/SuccessStorySection'
 
-import { getPartners, getProjects, getStories } from '../utils/api'
 import { alertMessage } from '../utils/alert'
+import { getClient } from '../utils/sanity.server'
+import groq from 'groq'
 
 export default function Home({ error, projects, stories, partners }) {
   return (
@@ -56,16 +56,78 @@ export default function Home({ error, projects, stories, partners }) {
   )
 }
 
-export async function getServerSideProps() {
+// export async function getStaticProps({ preview = false }) {
+//   const partners = await getClient(preview).fetch(groq`
+//         *[_type == "partner" && publishedAt < now()] | order(publishedAt desc){
+//             _id,
+//             name,
+//             "author": {
+//               "name": author->name,
+//               "image": author->image,
+//             },
+//             logo,
+//             publishedAt,
+//             slug
+//         }
+//   `)
+//   return {
+//     props: {
+//       partners,
+//     },
+//   }
+// }
+
+export async function getServerSideProps({ preview = false }) {
   try {
-    const projects = await getProjects()
-    const stories = await getStories()
-    const partners = await getPartners()
+    const partners = await getClient(preview).fetch(groq`
+        *[_type == "partner" && publishedAt < now()] | order(publishedAt desc){
+            _id, 
+            name, 
+            logo,
+            publishedAt,
+            slug,
+            "author": {
+              "name": author->name,
+              "image": author->image,
+            }
+        }
+  `)
+    const stories = await getClient(preview).fetch(groq`
+  *[_type == "story" && publishedAt < now()] | order(publishedAt desc){
+      _id, 
+      title, 
+      image,
+      publishedAt,
+      slug, 
+      excerpt,
+      body,
+      "author": {
+        "name": author->name,
+        "image": author->image,
+      }
+  }
+`)
+    const projects = await getClient(preview).fetch(groq`
+        *[_type == "project" && publishedAt < now()] | order(publishedAt desc){
+            _id, 
+            title, 
+            image,
+            publishedAt,
+            slug, 
+            excerpt,
+            body,
+            "author": {
+              "name": author->name,
+              "image": author->image,
+            }
+        }
+  `)
+
     return {
       props: {
-        projects: projects.data,
-        stories: stories.data,
-        partners: partners.data,
+        projects,
+        stories,
+        partners,
       },
     }
   } catch (error) {

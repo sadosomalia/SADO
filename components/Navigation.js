@@ -7,7 +7,7 @@ const Navigation = ({ carousel }) => {
   useEffect(() => {
     window.addEventListener('scroll', () => {
       const nav = document.querySelector('header')
-      nav.classList.toggle('sticky', window.scrollY > 100)
+      nav?.classList.toggle('sticky', window.scrollY > 100)
     })
   }, [])
 

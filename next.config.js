@@ -3,7 +3,12 @@ const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
   images: {
-    domains: ['source.unsplash.com', 'localhost', 'api.sadosomalia.org'],
+    domains: [
+      'source.unsplash.com',
+      'localhost',
+      'api.sadosomalia.org',
+      'cdn.sanity.io',
+    ],
   },
   // eslint: { ignoreDuringBuilds: true },
 }

@@ -1,13 +1,10 @@
 import Meta from '../components/Meta'
 import Navigation from '../components/Navigation'
-import { getVacanciesPostings } from '../utils/api'
+import groq from 'groq'
+import { getClient } from '../utils/sanity.server'
+import { getFileUrlFromId } from '../utils/sanity'
 
 const VacanciesPostings = ({ vacancies, error }) => {
-  // sort by createdAt
-  vacancies.sort((a, b) => {
-    return new Date(b.attributes.createdAt) - new Date(a.attributes.createdAt)
-  })
-
   if (error) {
     return (
       <div className='mt-5'>
@@ -35,29 +32,23 @@ const VacanciesPostings = ({ vacancies, error }) => {
           <div className='col-lg-8 col-md-10 col-12 mx-auto text-centera'>
             <h3>Vacancies & Postings</h3>
 
-            {vacancies &&
-              vacancies.map((v) => (
-                <div key={v.id} className='my-3 shadow-sm p-3'>
-                  <h5>{v.attributes.title}</h5>
-                  <p>{v.attributes.description}</p>
-                  {v.attributes.download &&
-                    v.attributes.download.data.map((d) => (
-                      <a
-                        href={`https://api.sadosomalia.org${d.attributes.url}`}
-                        key={d.id}
-                        target='_blank'
-                        rel='noreferrer'
-                      >
-                        {v.attributes.title}
-                      </a>
-                    ))}
-                  <br />
-                  <br />
-                  <span className='text-muted text-end'>
-                    Published At: {v.attributes.createdAt.slice(0, 10)}
-                  </span>
-                </div>
-              ))}
+            {vacancies?.map((v) => (
+              <div key={v?._id} className='my-3 shadow-sm p-3'>
+                <h5>{v?.title}</h5>
+                <a
+                  href={getFileUrlFromId(v?.file?.asset?._ref)}
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  {v?.title}
+                </a>
+                <br />
+                <br />
+                <span className='text-muted text-end'>
+                  Published At: {v?.publishedAt.slice(0, 10)}
+                </span>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -67,13 +58,25 @@ const VacanciesPostings = ({ vacancies, error }) => {
 
 export default VacanciesPostings
 
-export async function getServerSideProps() {
+export async function getServerSideProps({ preview = false }) {
   try {
-    const vacancies = await getVacanciesPostings()
+    const vacancies = await getClient(preview).fetch(groq`
+  *[_type == "vacancy" && publishedAt < now()] | order(publishedAt desc){
+      _id, 
+      title, 
+      file,
+      publishedAt,
+      slug, 
+      "author": {
+        "name": author->name,
+        "image": author->image,
+      }
+  }
+`)
 
     return {
       props: {
-        vacancies: vacancies.data,
+        vacancies,
       },
     }
   } catch (error) {

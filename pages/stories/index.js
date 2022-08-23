@@ -1,8 +1,9 @@
 import Meta from '../../components/Meta'
 import Navigation from '../../components/Navigation'
-import { getStories } from '../../utils/api'
 import SuccessStorySection from '../../components/SuccessStorySection'
 import { alertMessage } from '../../utils/alert'
+import { getClient } from '../../utils/sanity.server'
+import groq from 'groq'
 
 const Stories = ({ stories, error }) => {
   const carousel = [
@@ -37,12 +38,27 @@ const Stories = ({ stories, error }) => {
 
 export default Stories
 
-export async function getServerSideProps() {
+export async function getServerSideProps({ preview = false }) {
   try {
-    const { data } = await getStories()
+    const stories = await getClient(preview).fetch(groq`
+  *[_type == "story" && publishedAt < now()] | order(publishedAt desc){
+      _id, 
+      title, 
+      image,
+      publishedAt,
+      slug, 
+      excerpt,
+      body,
+      "author": {
+        "name": author->name,
+        "image": author->image,
+      }
+  }
+`)
+
     return {
       props: {
-        stories: data,
+        stories,
       },
     }
   } catch (error) {

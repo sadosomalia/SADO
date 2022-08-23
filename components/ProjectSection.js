@@ -1,5 +1,6 @@
-import Link from 'next/link'
 import Image from 'next/image'
+import Link from 'next/link'
+import { getImageUrlFromId } from '../utils/sanity'
 
 const ProjectSection = ({ projects, loadMore = true }) => {
   return (
@@ -15,19 +16,22 @@ const ProjectSection = ({ projects, loadMore = true }) => {
         {projects &&
           projects.length > 0 &&
           projects.map((project) => (
-            <div key={project.id} className='col-lg-3 col-md-4 col-sm-6 col-12'>
+            <div
+              key={project?._id}
+              className='col-lg-3 col-md-4 col-sm-6 col-12'
+            >
               <div className='card shadow border-0 rounded-0 animate__bounceIn'>
                 <Image
                   width={300}
                   height={300}
-                  src={`https://api.sadosomalia.org${project.attributes.image.data[0].attributes.url}`}
-                  alt={project.attributes.image.data[0].attributes.name}
+                  src={getImageUrlFromId(project?.image?.asset?._ref)}
+                  alt={project?.title}
                   className='card-img-top img-fluid'
                 />
                 <div className='card-body'>
-                  <h6 className='card-title'>{project.attributes.title}</h6>
-                  <p className='card-text'>{project.attributes.caption}</p>
-                  <Link href={`/projects/${project.attributes.slug}`}>
+                  <h6 className='card-title'>{project?.title}</h6>
+                  <p className='card-text'>{project?.excerpt}</p>
+                  <Link href={`/projects/${project?.slug?.current}`}>
                     <a className='btn btn-outline-success btn-sm rounded-0 shadow'>
                       Read More
                     </a>

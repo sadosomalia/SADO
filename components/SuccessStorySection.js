@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { getImageUrlFromId } from '../utils/sanity'
 
 const SuccessStorySection = ({ stories, loadMore = true }) => {
   return (
@@ -13,30 +14,28 @@ const SuccessStorySection = ({ stories, loadMore = true }) => {
       </p>
 
       <div className='row gy-3'>
-        {stories &&
-          stories.length > 0 &&
-          stories.map((story) => (
-            <div key={story.id} className='col-lg-3 col-md-4 col-sm-6 col-12'>
-              <div className='card shadow border-0 rounded-0 animate__bounceIn'>
-                <Image
-                  width={300}
-                  height={300}
-                  src={`https://api.sadosomalia.org${story.attributes.image.data[0].attributes.url}`}
-                  alt={story.attributes.image.data[0].attributes.name}
-                  className='card-img-top img-fluid'
-                />
-                <div className='card-body'>
-                  <h6 className='card-title'>{story.attributes.title}</h6>
-                  <p className='card-text'>{story.attributes.caption}</p>
-                  <Link href={`/stories/${story.attributes.slug}`}>
-                    <a className='btn btn-outline-success btn-sm rounded-0 shadow'>
-                      Read More
-                    </a>
-                  </Link>
-                </div>
+        {stories?.map((story) => (
+          <div key={story?._id} className='col-lg-3 col-md-4 col-sm-6 col-12'>
+            <div className='card shadow border-0 rounded-0 animate__bounceIn'>
+              <Image
+                width={300}
+                height={300}
+                src={getImageUrlFromId(story?.image?.asset?._ref)}
+                alt={story?.title}
+                className='card-img-top img-fluid'
+              />
+              <div className='card-body'>
+                <h6 className='card-title'>{story?.title}</h6>
+                <p className='card-text'>{story?.excerpt}</p>
+                <Link href={`/stories/${story?.slug?.current}`}>
+                  <a className='btn btn-outline-success btn-sm rounded-0 shadow'>
+                    Read More
+                  </a>
+                </Link>
               </div>
             </div>
-          ))}
+          </div>
+        ))}
       </div>
       {/* load more stories */}
       {loadMore && (

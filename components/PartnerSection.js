@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { getImageUrlFromId } from '../utils/sanity'
 
 const PartnerSection = ({ partners }) => {
   return (
@@ -16,42 +17,38 @@ const PartnerSection = ({ partners }) => {
         <div className='carousel-inner'>
           <div className='carousel-item active'>
             <div className='row gy-3'>
-              {partners &&
-                partners.length > 0 &&
-                partners.slice(4, 8).map((partner, i) => (
-                  <div
-                    key={i}
-                    className='col-lg-2 col-md-4 col-6 mx-auto shadow text-center'
-                  >
-                    <Image
-                      width='100%'
-                      height='100%'
-                      src={`https://api.sadosomalia.org${partner.attributes.logo.data.attributes.url}`}
-                      alt={partner.attributes.logo.data.attributes.name}
-                      className='img-fluid'
-                    />
-                  </div>
-                ))}
+              {partners?.slice(4, 8).map((partner, i) => (
+                <div
+                  key={i}
+                  className='col-lg-2 col-md-4 col-6 mx-auto shadow text-center'
+                >
+                  <Image
+                    width='100%'
+                    height='100%'
+                    src={getImageUrlFromId(partner?.logo?.asset?._ref)}
+                    alt={partner?.name}
+                    className='img-fluid'
+                  />
+                </div>
+              ))}
             </div>
           </div>
           <div className='carousel-item'>
             <div className='row gy-3'>
-              {partners &&
-                partners.length > 0 &&
-                partners.slice(0, 4).map((partner, i) => (
-                  <div
-                    key={i}
-                    className='col-lg-2 col-md-4 col-6 mx-auto shadow text-center'
-                  >
-                    <Image
-                      width={'100%'}
-                      height={'100%'}
-                      src={`https://api.sadosomalia.org${partner.attributes.logo.data.attributes.url}`}
-                      alt={partner.attributes.logo.data.attributes.name}
-                      className='img-fluid'
-                    />
-                  </div>
-                ))}
+              {partners?.slice(0, 4).map((partner, i) => (
+                <div
+                  key={i}
+                  className='col-lg-2 col-md-4 col-6 mx-auto shadow text-center'
+                >
+                  <Image
+                    width={'100%'}
+                    height={'100%'}
+                    src={getImageUrlFromId(partner?.logo?.asset?._ref)}
+                    alt={partner?.name}
+                    className='img-fluid'
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>
