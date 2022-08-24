@@ -4,27 +4,7 @@ import Meta from '../../components/Meta'
 import Navigation from '../../components/Navigation'
 import Image from 'next/image'
 
-import Map, { Marker } from 'react-map-gl'
-import 'mapbox-gl/dist/mapbox-gl.css'
-
 const Somalia = () => {
-  const [viewport, setViewport] = useState({
-    latitude: 4.741754612713282,
-    longitude: 45.203976643935924,
-    zoom: 5.5,
-  })
-
-  const parkLayer = {
-    id: 'landuse_park',
-    type: 'fill',
-    source: 'mapbox',
-    'source-layer': 'landuse',
-    filter: ['==', 'class', 'park'],
-    paint: {
-      'fill-color': '#4E3FC8',
-    },
-  }
-
   const carousel = [
     {
       _id: 1,

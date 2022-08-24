@@ -10,6 +10,7 @@
     "export": "next build && next export"
   },
   "dependencies": {
+    "@portabletext/react": "^1.0.6",
     "@sanity/image-url": "^1.0.1",
     "animate.css": "^4.1.1",
     "axios": "^0.27.2",
@@ -23,10 +24,7 @@
     "react-countdown": "^2.3.2",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
-    "react-loading-icons": "^1.1.0",
-    "react-map-gl": "^7.0.19",
-    "react-markdown": "^8.0.3",
-    "remark-gfm": "^3.0.1"
+    "react-loading-icons": "^1.1.0"
   },
   "devDependencies": {
     "eslint": "8.22.0",

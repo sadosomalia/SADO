@@ -13,7 +13,7 @@ export const useCurrentUser = createCurrentUserHook(config)
 
 export const getFileUrlFromId = (ref) => {
   const [_file, id, extension] = ref?.split('-')
-  return `https://cdn.sanity.io/files/${process.env.REACT_APP_PROJECT_ID}/production/${id}.${extension}`
+  return `https://cdn.sanity.io/files/bj2tfmaf/production/${id}.${extension}`
 }
 
 export const getImageUrlFromId = (ref) => {
